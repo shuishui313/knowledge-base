@@ -2,9 +2,13 @@
 
 四篇入门短课，按日期读。每篇约 5–8 分钟：场景 → 概念 → 香港落地例子 → 小练习 → 两道自测。自测后面有收起的参考答案，先做再打开。
 
+**中文** | [English](README.en.md)
+
+[课程](#lessons) · [约定](#conventions)
+
 正文是简体中文。例子用虚拟银行、物流仓、公营柜面这类公开可见的场景来写，不涉及任何机构的内部材料。
 
-**中文** | [English](README.en.md)
+<a id="lessons"></a>
 
 ## 课程索引
 
@@ -17,8 +21,24 @@
 
 Day 3 和 Day 4 用同一个例子：虚拟银行客户经理工作台的风险提示。Day 3 拆接口、数据和集成，Day 4 把同一句话收成边界、不做清单和一周计划。
 
+<a id="conventions"></a>
+
 ## 收录约定
 
 - 一篇短课一个 Markdown 文件，文件名以日期开头
 - 结构保持：文首写日期、Day、主题板块、难度；正文五段；自测后给出参考答案
-- 新增时放入文件，并在上表追加一行
+- 新增时放入文件，并在本文件和 `README.en.md` 的表里各加一行。步骤见 [fde-daily-lesson](../../examples/recipes/fde-daily-lesson/README.md)
+
+<details>
+<summary>仓库目录</summary>
+
+| 目录 | 说明 |
+|------|------|
+| [notes/ai-glossary/](../../notes/ai-glossary/README.md) | AI 名词与技术科普 |
+| [notes/hk-fde/](README.md) | 香港 FDE 短课（本目录） |
+| [prompt-templates/](../../prompt-templates/README.md) | Prompt 模板，8 个文件 |
+| [examples/recipes/](../../examples/recipes/README.md) | 加短课、笔记、模板的步骤 |
+| [skills/knowledge-base/SKILL.md](../../skills/knowledge-base/SKILL.md) | 代理维护手册 |
+| [docs/](../../docs/decisions.md) | [已采纳](../../docs/decisions.md) · [明确不做](../../docs/declined.md) |
+
+</details>
