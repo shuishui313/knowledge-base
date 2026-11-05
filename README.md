@@ -1,37 +1,63 @@
-# Gss AI Projects
+<!-- Bilingual via details (GitHub has no real JS tabs) -->
 
-个人 AI 项目知识库总入口。每个项目一个独立仓库，统一归拢在 [gsspai](https://github.com/gsspai) Organization 下。
+<details open>
+<summary><strong>中文</strong></summary>
 
-## 项目列表
+# Gss 知识库
 
-| 项目 | 简介 | 仓库 | 状态 |
-|------|------|------|------|
-| MediaAI | 新传媒公司 AI 转型项目 | [gsspai/mediaai](https://github.com/gsspai/mediaai) | 进行中 |
+个人 AI / FDE 学习与模板总入口（账号：[shuishui313](https://github.com/shuishui313)）。
 
-## AI 科普笔记
+## 内容分区
 
-面向持续积累的 AI 名词/技术科普笔记系列（每日一篇），收录于本仓库 [notes/ai-glossary](notes/ai-glossary/)。
+| 分区 | 说明 | 路径 |
+|------|------|------|
+| AI 科普笔记 | 每日一篇名词/技术科普 | [notes/ai-glossary](notes/ai-glossary/) |
+| 香港 FDE 短课 | 场景→概念→落地例子→练习→自测（含参考答案） | [notes/hk-fde](notes/hk-fde/) |
+| Prompt 模板 | Role / Task / Requirements / Output Format，目前 8 个 | [prompt-templates](prompt-templates/) |
 
-- 当前已收录：[AI 幻觉（Hallucination）](notes/ai-glossary/AI幻觉(Hallucination).md)
+## 相关项目
 
-## Prompt 模板库
+| 项目 | 简介 | 仓库 |
+|------|------|------|
+| EveryNews | 每日 AI 新闻图文流水线 | [shuishui313/EveryNews](https://github.com/shuishui313/EveryNews) |
+| MediaMgDashboard | 传媒管理看板 | [shuishui313/MediaMgDashboard](https://github.com/shuishui313/MediaMgDashboard) |
 
-面向研发、产品、运营等场景的可复用 Prompt 模板集合，统一采用 `Role / Task / Requirements / Output Format` 结构化格式，目前已收录 9 个场景模板。
+## 维护约定
 
-- 模板库入口：[prompt-templates/README.md](prompt-templates/README.md)
-- 模板清单：
-  - 代码审查：[code-review.md](prompt-templates/code-review.md)
-  - PRD 需求文档：[prd.md](prompt-templates/prd.md)
-  - 测试用例：[test-cases.md](prompt-templates/test-cases.md)
-  - 竞品分析：[competitor-analysis.md](prompt-templates/competitor-analysis.md)
-  - 数据分析：[data-analysis.md](prompt-templates/data-analysis.md)
-  - 邮件起草：[email-draft.md](prompt-templates/email-draft.md)
-  - 会议纪要：[meeting-minutes.md](prompt-templates/meeting-minutes.md)
-  - 专业名词深度研习：[term-research.md](prompt-templates/term-research.md)
-  - 交接文档：[handoff.md](prompt-templates/handoff.md)
+- 新增 AI 笔记：写入 `notes/ai-glossary/` 并更新该目录 README 索引
+- 新增 FDE 短课：写入 `notes/hk-fde/` 并更新该目录 README 索引
+- 笔记正文用简体中文；各目录 README 用中英折叠页切换
+- 仓库命名：`kebab-case`
 
-## 说明
+</details>
 
-- 每个项目独立维护 issue / PR / release
-- 新增项目时在本表追加一行，并保持仓库命名规范：`kebab-case`
-- 技术栈、架构文档见各项目 README
+<details>
+<summary><strong>English</strong></summary>
+
+# Gss Knowledge Base
+
+Personal hub for AI learning notes, Hong Kong FDE short lessons, and prompt templates ([shuishui313](https://github.com/shuishui313)).
+
+## Sections
+
+| Section | What | Path |
+|---------|------|------|
+| AI glossary | Short daily concept notes | [notes/ai-glossary](notes/ai-glossary/) |
+| HK FDE lessons | Scene → concept → local example → drill → quiz (with answers) | [notes/hk-fde](notes/hk-fde/) |
+| Prompt templates | Role / Task / Requirements / Output Format, 8 templates | [prompt-templates](prompt-templates/) |
+
+## Related projects
+
+| Project | Summary | Repo |
+|---------|---------|------|
+| EveryNews | Daily AI news card pipeline | [shuishui313/EveryNews](https://github.com/shuishui313/EveryNews) |
+| MediaMgDashboard | Media management dashboard | [shuishui313/MediaMgDashboard](https://github.com/shuishui313/MediaMgDashboard) |
+
+## Conventions
+
+- New AI note: add under `notes/ai-glossary/` and update that README index
+- New FDE lesson: add under `notes/hk-fde/` and update that README index
+- Note bodies are Simplified Chinese; directory READMEs switch language with folds
+- Repo names: `kebab-case`
+
+</details>
