@@ -1,10 +1,10 @@
 # 维护步骤
 
-三份短说明，对应这个库最常加的三种内容。
+四份短说明，对应这个库最常加的四种内容。
 
 **中文** | [English](README.en.md)
 
-[短课](#lessons) · [笔记](#notes) · [模板](#templates)
+[短课](#lessons) · [笔记](#notes) · [算法](#algorithms) · [模板](#templates)
 
 <a id="lessons"></a>
 
@@ -17,6 +17,12 @@
 ## 笔记
 
 [AI 科普笔记](ai-glossary-note/README.md)：加一篇名词笔记，并更新 `notes/ai-glossary/` 的两份索引。
+
+<a id="algorithms"></a>
+
+## 算法
+
+[AI 算法笔记](ai-algorithm-note/README.md)：加一篇算法笔记（文件名带 `ALG-NN`，索引含适用场景），并更新 `notes/ai-algorithms/` 的两份索引。
 
 <a id="templates"></a>
 

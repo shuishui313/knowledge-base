@@ -1,10 +1,10 @@
 # Maintenance recipes
 
-Three short guides for the content this repo adds most often. Each guide is in Chinese.
+Four short guides for the content this repo adds most often. Each guide is in Chinese.
 
 [中文](README.md) | **English**
 
-[Lesson](#lesson) · [Glossary](#glossary) · [Template](#template)
+[Lesson](#lesson) · [Glossary](#glossary) · [Algorithm](#algorithm) · [Template](#template)
 
 <a id="lesson"></a>
 
@@ -17,6 +17,12 @@ Three short guides for the content this repo adds most often. Each guide is in C
 ## Glossary
 
 [AI glossary note](ai-glossary-note/README.md) (in Chinese): add one term note and update both `notes/ai-glossary/` indexes.
+
+<a id="algorithm"></a>
+
+## Algorithm
+
+[AI algorithm note](ai-algorithm-note/README.md) (in Chinese): add one algorithm note (filename includes `ALG-NN`; the index has an applicable-scenarios column) and update both `notes/ai-algorithms/` indexes.
 
 <a id="template"></a>
 

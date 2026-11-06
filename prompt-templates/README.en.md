@@ -58,9 +58,10 @@ Eight reusable prompt templates for engineering, product, and operations work. N
 | Folder | What |
 |--------|------|
 | [notes/ai-glossary/](../notes/ai-glossary/README.en.md) | AI glossary notes. Note files are in Chinese |
+| [notes/ai-algorithms/](../notes/ai-algorithms/README.en.md) | AI algorithm lessons. Note files are in Chinese |
 | [notes/hk-fde/](../notes/hk-fde/README.en.md) | Hong Kong FDE short lessons. Lesson files are in Chinese |
 | [prompt-templates/](README.en.md) | Prompt templates, 8 files, in Chinese (this folder) |
-| [examples/recipes/](../examples/recipes/README.en.md) | Steps for adding a lesson, note, or template. Guides are in Chinese |
+| [examples/recipes/](../examples/recipes/README.en.md) | Steps for adding a lesson, note, algorithm, or template. Guides are in Chinese |
 | [skills/knowledge-base/SKILL.md](../skills/knowledge-base/SKILL.md) | Agent handbook (in Chinese) |
 | [docs/](../docs/decisions.md) | [Decisions](../docs/decisions.md) · [Declined](../docs/declined.md) (in Chinese) |
 

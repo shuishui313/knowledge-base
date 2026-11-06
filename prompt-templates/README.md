@@ -60,9 +60,10 @@
 | 目录 | 说明 |
 |------|------|
 | [notes/ai-glossary/](../notes/ai-glossary/README.md) | AI 名词与技术科普 |
+| [notes/ai-algorithms/](../notes/ai-algorithms/README.md) | AI 算法短课 |
 | [notes/hk-fde/](../notes/hk-fde/README.md) | 香港 FDE 短课 |
 | [prompt-templates/](README.md) | Prompt 模板，8 个文件（本目录） |
-| [examples/recipes/](../examples/recipes/README.md) | 加短课、笔记、模板的步骤 |
+| [examples/recipes/](../examples/recipes/README.md) | 加短课、笔记、算法、模板的步骤 |
 | [skills/knowledge-base/SKILL.md](../skills/knowledge-base/SKILL.md) | 代理维护手册 |
 | [docs/](../docs/decisions.md) | [已采纳](../docs/decisions.md) · [明确不做](../docs/declined.md) |
 
