@@ -428,7 +428,7 @@ a {
 }
 
 .lesson-card {
-  min-height: 248px;
+  min-height: 220px;
   padding: 24px;
   display: flex;
   flex-direction: column;
@@ -436,7 +436,8 @@ a {
 }
 
 .lesson-card .chips {
-  margin: 0;
+  margin: auto 0 0;
+  padding-top: 8px;
 }
 
 .lesson-card-top {
