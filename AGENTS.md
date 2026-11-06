@@ -24,16 +24,16 @@
 
 路径：`notes/hk-fde/`。一篇一个文件。文件名从一开始就带编号：`FDE-NN-YYYY-MM-DD-主题简述.md`（`NN` 与 Day 相同，两位数字）。已分配的编号不复用、不重排。
 
-顺序：场景 → 概念 → 香港落地例子 → 小练习 → 两道自测。自测后用 details 收起参考答案。
+顺序：场景 → 概念 → 香港落地例子 → 面试怎么说 → 小练习 → 两道自测。自测后用 details 收起参考答案。其中一题要问面试官换成另一类公司时答案怎么变。
 
-例子用虚拟、公开可见的场景（银行、仓库、柜面），不写任何机构的内部材料。
+例子用虚拟、公开可见的场景（银行、仓库、柜面），不写任何机构的内部材料，不编造真实公司的招聘原文。先写香港 FDE 招聘要考的那一层。答案按公司类型分开：虚拟银行/保险、物流、公营柜面、AI 产品或解决方案公司。一种公司写透，其余用一张对照表。公开面经只标明「公开面经里的常见问法」，不编造某家银行或保险公司的原话、候选人故事或逐字题。可以有短的拓展补充。「面试怎么说」大约一分钟：英文口语句，现场用粤语讲清楚，用英文把确认写下来。
 
 新增后更新 `notes/hk-fde/README.md` 和 `README.en.md`。若接上系列导航，补上一篇文末的「下一篇」。步骤见 [examples/recipes/fde-daily-lesson](examples/recipes/fde-daily-lesson/README.md)。对照：[2026-11-05 对齐范围](notes/hk-fde/FDE-04-2026-11-05-交付沟通-差不多就行时对齐范围.md)。
 
 ## 笔记和模板
 
-- AI 笔记放 `notes/ai-glossary/`。文件名从一开始就带编号：`AI-NN-中文名(English).md`（`NN` 按索引收录日期）。更新该目录两份索引。步骤见 [ai-glossary-note](examples/recipes/ai-glossary-note/README.md)
-- AI 算法放 `notes/ai-algorithms/`。一篇一个算法。文件名 `ALG-NN-中文名(English).md`（`NN` 为课序）。适用场景写在正文最前，索引用适用场景列。更新该目录两份索引。步骤见 [ai-algorithm-note](examples/recipes/ai-algorithm-note/README.md)
+- AI 笔记放 `notes/ai-glossary/`。文件名从一开始就带编号：`AI-NN-中文名(English).md`（`NN` 按索引收录日期）。分节可以不同，但先写香港 FDE 招聘要考的那一层，并带上「面试怎么说」和恰好两道自测。更新该目录两份索引。步骤见 [ai-glossary-note](examples/recipes/ai-glossary-note/README.md)
+- AI 算法放 `notes/ai-algorithms/`。一篇一个算法。文件名 `ALG-NN-中文名(English).md`（`NN` 为课序）。招聘切入写在正文最前，然后是适用场景，索引用适用场景列。还没写的下一篇只预告题目，不建文件、不放链接。更新该目录两份索引。步骤见 [ai-algorithm-note](examples/recipes/ai-algorithm-note/README.md)
 - 新的 Prompt 模板放 `prompt-templates/`，沿用 `Role / Task / Requirements / Output Format`（对照 `code-review.md`）。`handoff.md` 和 `term-research.md` 是已有变体，不要为了统一标题去改它们，除非任务明确要求。更新该目录两份索引。步骤见 [prompt-template](examples/recipes/prompt-template/README.md)
 - `prompt-templates/email-draft.md` 已经删除。文件不在就不要写回索引
 
@@ -51,4 +51,4 @@
 
 ## English
 
-The body above is Simplified Chinese. Use separate `README.md` and `README.en.md` files. Switch them with the top-bar links, never with a details widget. FDE lessons go scene, concept, Hong Kong example, drill, then two quiz questions, with answers inside `<details><summary>参考答案</summary>`. Algorithm notes start with applicable and not-applicable scenarios, then the same lesson shape. Filenames include the serial from the start: `FDE-NN-YYYY-MM-DD-主题简述.md`, `AI-NN-中文名(English).md`, `ALG-NN-中文名(English).md`. Never reuse or renumber an assigned serial. Do not invent links. When the task says to push `main`, fetch `origin main` first and push that branch. When you add a note, lesson, algorithm, or template, update both README indexes. Do not change EveryNews, MediaMgDashboard, or ruflo from this repo.
+The body above is Simplified Chinese. Use separate `README.md` and `README.en.md` files. Switch them with the top-bar links, never with a details widget. FDE lessons go scene, concept, Hong Kong example, 「面试怎么说」, drill, then two quiz questions, with answers inside `<details><summary>参考答案</summary>`. Algorithm notes open with hiring, then applicable and not-applicable scenarios, then the same lesson shape. Glossary notes keep their own headings and still lead with hiring, plus 「面试怎么说」 and exactly two quiz questions. All three lead with Hong Kong FDE hiring and differ by company type (virtual bank or insurer, logistics, public counter, AI product or solutions company): one type in depth, the others in one table. Label public interview patterns 「公开面经里的常见问法」; do not invent a quote, candidate story, or verbatim question from a named bank or insurer. One quiz question switches company type. Do not create or link an unwritten next lesson. Filenames include the serial from the start: `FDE-NN-YYYY-MM-DD-主题简述.md`, `AI-NN-中文名(English).md`, `ALG-NN-中文名(English).md`. Never reuse or renumber an assigned serial. Do not invent links. When the task says to push `main`, fetch `origin main` first and push that branch. When you add a note, lesson, algorithm, or template, update both README indexes. Do not change EveryNews, MediaMgDashboard, or ruflo from this repo.

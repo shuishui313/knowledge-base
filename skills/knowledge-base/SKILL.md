@@ -36,9 +36,13 @@ description: Maintain shuishui313/knowledge-base. Use when adding or editing Hon
 | AI 算法笔记 | `notes/ai-algorithms/` | [examples/recipes/ai-algorithm-note](../../examples/recipes/ai-algorithm-note/README.md) |
 | Prompt 模板 | `prompt-templates/` | [examples/recipes/prompt-template](../../examples/recipes/prompt-template/README.md) |
 
-FDE 短课顺序：场景 → 概念 → 香港落地例子 → 小练习 → 两道自测，然后 `<details><summary>参考答案</summary>`。
+FDE 短课顺序：场景 → 概念 → 香港落地例子 → 面试怎么说 → 小练习 → 两道自测，然后 `<details><summary>参考答案</summary>`。
 
-AI 算法笔记先写适用场景和不适用场景，然后是场景 → 概念 → 香港落地例子 → 小练习 → 两道自测，再收起参考答案。索引表要有适用场景列。
+AI 算法笔记先写招聘切入，再写适用场景和不适用场景，然后是场景 → 概念 → 香港落地例子 → 面试怎么说 → 小练习 → 两道自测，再收起参考答案。索引表要有适用场景列。
+
+AI 科普笔记保持自己的分节，但同样先写招聘要考的那一层，并加上「面试怎么说」和恰好两道自测。
+
+三类笔记都以香港 FDE 招聘要考的内容为主。答案按公司类型分开：虚拟银行/保险、物流、公营柜面、AI 产品或解决方案公司。一种公司写透，其余用一张对照表。公开面经只标明「公开面经里的常见问法」，不编造具名银行或保险公司的原话、候选人故事或逐字题。可以有短的拓展补充。「面试怎么说」大约一分钟：英文口语句，现场用粤语讲清楚，用英文把确认写下来。自测两题，其中一题换成另一类公司。还没写的算法下一篇只预告题目，不建文件、不放链接。
 
 新模板沿用 `Role / Task / Requirements / Output Format`，对照 `prompt-templates/code-review.md`。
 
@@ -48,7 +52,7 @@ AI 算法笔记先写适用场景和不适用场景，然后是场景 → 概念
 
 - FDE：`FDE-NN-YYYY-MM-DD-主题简述.md`。`NN` 与 Day 相同，两位数字。Day 1 是 `FDE-01`。文首写法：`**FDE-05** · **2026-11-06** · Day 5 · **主题板块** 岗位本身 · **难度** 进阶`。
 - AI：`AI-NN-中文名(English).md`。`NN` 按索引里已有收录日期从早到晚，两位数字。第一篇是 `AI-01`。文首只写编号，例如 `**AI-01**`。笔记原来没有日期行时，不要为了编号补一行日期。
-- ALG：`ALG-NN-中文名(English).md`。`NN` 是课序，两位数字。第一篇是 `ALG-01`。文首写法：`**ALG-01** · **2026-11-06** · **分类** 回归 · **难度** 入门 · **面试频率** 极高`。
+- ALG：`ALG-NN-中文名(English).md`。`NN` 是课序，两位数字。第一篇是 `ALG-01`。文首写法：`**ALG-01** · **2026-11-06** · **分类** 回归 · **难度** 入门 · **面试频率** 金融场景高；纯公式推导在 FDE 面经里少见`。
 
 ## 延伸观看
 
@@ -68,4 +72,4 @@ FDE 短课和 AI 算法笔记放在参考答案之后、系列导航之前。AI 
 
 ## English
 
-Read `docs/decisions.md` and `docs/declined.md` first; both are in Chinese. Keep bilingual indexes as two files with the top-bar switcher above, including `notes/ai-algorithms/`. FDE lessons use the five-part order plus a collapsed 参考答案. Algorithm notes start with applicable and not-applicable scenarios, then the same lesson shape, and the index keeps an applicable-scenarios column. Filenames include the serial from the start: `FDE-NN-YYYY-MM-DD-主题简述.md` (NN matches Day), `AI-NN-中文名(English).md` (NN follows the index date), `ALG-NN-中文名(English).md` (NN is the lesson order). Never reuse or renumber an assigned serial. Optional YouTube links go in `延伸观看` (Related watching): at most 2 per series per day, only a relatively popular explainer, one short lesson, or an insightful take; skip ordinary long or generic courses; omit the section if none qualify; do not write view counts. Update both indexes when you add a file. Do not invent links. Do not edit EveryNews, MediaMgDashboard, or ruflo from this repo. Push `main` only when the task says to, after fetching `origin main`.
+Read `docs/decisions.md` and `docs/declined.md` first; both are in Chinese. Keep bilingual indexes as two files with the top-bar switcher above, including `notes/ai-algorithms/`. FDE lessons go scene, concept, Hong Kong example, 「面试怎么说」, drill, then two quiz questions, with answers inside `<details><summary>参考答案</summary>`. Algorithm notes open with a hiring section, then applicable and not-applicable scenarios, then the same lesson shape, and the index keeps an applicable-scenarios column. Glossary notes keep their own headings and still lead with hiring, plus 「面试怎么说」 and exactly two quiz questions. All three lead with Hong Kong FDE hiring. Answers differ by company type (virtual bank or insurer, logistics, public counter, AI product or solutions company): one type in depth, the others in one comparison table. Label public interview patterns 「公开面经里的常见问法」; do not invent a quote, candidate story, or verbatim question from a named bank or insurer. 「面试怎么说」 is about one minute of English a candidate can say, plus Cantonese on site and English for the written confirmation. One quiz question switches company type. Do not create or link an algorithm lesson that has no file yet. Filenames include the serial from the start: `FDE-NN-YYYY-MM-DD-主题简述.md` (NN matches Day), `AI-NN-中文名(English).md` (NN follows the index date), `ALG-NN-中文名(English).md` (NN is the lesson order). Never reuse or renumber an assigned serial. Optional YouTube links go in `延伸观看` (Related watching): at most 2 per series per day, only a relatively popular explainer, one short lesson, or an insightful take; skip ordinary long or generic courses; omit the section if none qualify; do not write view counts. Update both indexes when you add a file. Do not invent links. Do not edit EveryNews, MediaMgDashboard, or ruflo from this repo. Push `main` only when the task says to, after fetching `origin main`.
