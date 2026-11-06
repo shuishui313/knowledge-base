@@ -4,60 +4,61 @@ import { loadTracks } from '../lib/content'
 import { sitePath } from '../lib/paths'
 
 const tracks = loadTracks()
+const first = tracks[0]?.lessons[0]
 const home = sitePath('/')
-const description = '前线课。岗位、科普与算法。'
+const description = 'Knowledge Base. 岗位、科普与算法，按编号阅读。'
 ---
 
-<Base title="前线课" description={description} path={home} current="home">
-  <section class="hero home-hero" aria-labelledby="site-title">
-    <div class="hero-grid" aria-hidden="true"></div>
-    <div class="hero-light" aria-hidden="true"></div>
+<Base title="Knowledge Base" description={description} path={home} current="home">
+  <section class="hero">
     <svg class="hero-instrument" viewBox="0 0 640 640" aria-hidden="true" focusable="false">
-      <circle cx="470" cy="220" r="230" fill="none" stroke="rgba(255,255,255,0.14)" stroke-width="1"></circle>
-      <circle cx="470" cy="220" r="156" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"></circle>
-      <circle cx="470" cy="220" r="3.5" fill="rgba(255,255,255,0.7)"></circle>
-      <path d="M20 220 H640" stroke="rgba(255,255,255,0.14)" stroke-width="1"></path>
-      <g stroke="rgba(255,255,255,0.28)" stroke-width="1">
-        <path d="M150 212 v16 M230 208 v24 M310 212 v16 M390 208 v24 M470 212 v16 M550 208 v24"></path>
+      <circle cx="430" cy="250" r="210" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="1"></circle>
+      <circle cx="430" cy="250" r="148" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1"></circle>
+      <circle cx="430" cy="250" r="3.5" fill="rgba(255,255,255,0.7)"></circle>
+      <path d="M40 250 H620" stroke="rgba(255,255,255,0.16)" stroke-width="1"></path>
+      <g stroke="rgba(255,255,255,0.32)" stroke-width="1">
+        <path d="M150 242 v16 M230 238 v24 M310 242 v16 M390 238 v24 M470 242 v16 M550 238 v24"></path>
       </g>
     </svg>
-    <div class="wrap home-stage">
-      <div class="home-intro">
-        <h1 id="site-title">前线课</h1>
-        <p class="home-line">岗位 · 科普 · 算法</p>
-        <p class="continue" data-continue hidden></p>
+    <div class="wrap hero-copy">
+      <p class="eyebrow"><span class="eyebrow-en">shuishui313</span></p>
+      <h1>Knowledge Base</h1>
+      <p class="promise">岗位 · 科普 · 算法</p>
+      <div class="actions">
+        {first && <a class="btn btn-primary" href={first.href}>从 {first.serial} 开始</a>}
+        <a class="btn btn-ghost" href="#tracks">三条路径</a>
       </div>
-      <div class="rail" aria-hidden="true"><i></i><i></i><i></i></div>
+      <p class="hero-range">
+        {
+          tracks.map((track, index) => (
+            <>
+              {index > 0 && <span aria-hidden="true"> · </span>}
+              <a href={track.href}>{track.rangeLabel}</a>
+            </>
+          ))
+        }
+      </p>
+    </div>
+  </section>
+
+  <section class="section" id="tracks">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker"><span>01</span>路径</p>
+        <h2>三条路径</h2>
+      </div>
       <div class="track-grid">
         {
-          tracks.map((track) => {
-            const serials = track.lessons.map((lesson) => lesson.serial).join(' ')
-            return (
-              <a class="track-card" href={track.href}>
-                <span class="track-index">{track.index}</span>
-                <h2>{track.shortName}</h2>
-                <div class="ring">
-                  <svg viewBox="0 0 88 88" aria-hidden="true">
-                    <circle class="ring-track" cx="44" cy="44" r="36"></circle>
-                    <circle
-                      class="ring-value"
-                      cx="44"
-                      cy="44"
-                      r="36"
-                      pathLength="100"
-                      data-meter
-                      data-serials={serials}
-                    ></circle>
-                  </svg>
-                  <span class="progress-figure" data-progress data-total={track.count} data-serials={serials}>
-                    0/{track.count}
-                  </span>
-                </div>
-                <span class="track-range">{track.rangeLabel}</span>
-                <span class="tile-preview" data-preview data-serials={serials}></span>
-              </a>
-            )
-          })
+          tracks.map((track) => (
+            <a class="track-card" href={track.href}>
+              <span class="track-index">{track.index}</span>
+              <h3>{track.shortName}</h3>
+              <p class="track-foot">
+                <span>{track.count} 篇</span>
+                <span>{track.rangeLabel}</span>
+              </p>
+            </a>
+          ))
         }
       </div>
     </div>

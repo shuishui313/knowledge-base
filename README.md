@@ -6,7 +6,7 @@
 
 [分区](#sections) · [相关项目](#related) · [维护约定](#conventions)
 
-公开阅读，无需登录：[前线课](https://shuishui313.github.io/knowledge-base/)。
+公开阅读，无需登录：[Knowledge Base](https://shuishui313.github.io/knowledge-base/)。
 
 <a id="sections"></a>
 
