@@ -14,6 +14,7 @@ Short notes on AI terms and techniques. Each note is written in Simplified Chine
 |-------|------|------|------|
 | Hallucination | Hallucination | 2026-10-18 | [AI 幻觉（Hallucination）](AI幻觉(Hallucination).md) (in Chinese) |
 | Retrieval-augmented generation | RAG | 2026-11-05 | [RAG 检索增强生成（RAG）](RAG检索增强生成(RAG).md) (in Chinese) |
+| Tool calling | Tool Calling | 2026-11-06 | [工具调用（Tool Calling）](工具调用(Tool-Calling).md) (in Chinese) |
 
 <a id="conventions"></a>
 

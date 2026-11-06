@@ -14,6 +14,7 @@
 |------|------|---------|------|
 | 幻觉 | Hallucination | 2026-10-18 | [AI 幻觉（Hallucination）](AI幻觉(Hallucination).md) |
 | 检索增强生成 | RAG | 2026-11-05 | [RAG 检索增强生成（RAG）](RAG检索增强生成(RAG).md) |
+| 工具调用 | Tool Calling | 2026-11-06 | [工具调用（Tool Calling）](工具调用(Tool-Calling).md) |
 
 <a id="conventions"></a>
 
