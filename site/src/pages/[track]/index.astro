@@ -1,0 +1,46 @@
+---
+import Base from '../../layouts/Base.astro'
+import LessonCard from '../../components/LessonCard.astro'
+import { getTrack, type Track } from '../../lib/content'
+import type { TrackId } from '../../lib/paths'
+
+interface Props {
+  track: Track
+}
+
+export function getStaticPaths() {
+  return (['fde', 'ai', 'algorithms'] as const).map((id) => ({
+    params: { track: id },
+    props: { track: getTrack(id) },
+  }))
+}
+
+const { track } = Astro.props as Props
+const current = track.id as TrackId
+const description = track.lede
+---
+
+<Base title={track.name} description={description} path={track.href} current={current}>
+  <header class="mast">
+    <div class="wrap">
+      <p class="kicker"><span>{track.index}</span>路径</p>
+      <h1>{track.name}</h1>
+      <p class="lede">{track.lede}</p>
+      <p class="mast-meta">
+        <span>{track.count} 篇</span>
+        <span aria-hidden="true">·</span>
+        <span>{track.rangeLabel}</span>
+        <span aria-hidden="true">·</span>
+        <a href={track.enHref} target="_blank" rel="noopener noreferrer">英文索引</a>
+      </p>
+      <p class="mast-note">课文为简体中文。</p>
+    </div>
+  </header>
+  <section class="catalog">
+    <div class="wrap">
+      <div class="lesson-grid">
+        {track.lessons.map((lesson) => <LessonCard lesson={lesson} />)}
+      </div>
+    </div>
+  </section>
+</Base>

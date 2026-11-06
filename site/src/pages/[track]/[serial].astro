@@ -1,0 +1,79 @@
+---
+import Base from '../../layouts/Base.astro'
+import { allLessons, getTrack, type Lesson } from '../../lib/content'
+import type { TrackId } from '../../lib/paths'
+
+interface Props {
+  lesson: Lesson
+}
+
+export function getStaticPaths() {
+  return allLessons().map((lesson) => ({
+    params: { track: lesson.track, serial: lesson.serial },
+    props: { lesson },
+  }))
+}
+
+const { lesson } = Astro.props as Props
+const track = getTrack(lesson.track)
+const current = lesson.track as TrackId
+const title = `${lesson.serial} · ${lesson.pageTitle}`
+---
+
+<Base title={title} description={lesson.description} path={lesson.href} current={current} ogType="article">
+  <Fragment slot="head">
+    {lesson.prev && <link rel="prev" href={lesson.prev.href} />}
+    {lesson.next && <link rel="next" href={lesson.next.href} />}
+  </Fragment>
+  <article class="lesson">
+    <div class="wrap">
+      <header class="lesson-head">
+        <p class="crumb">
+          <a href={track.href}>{track.shortName}</a>
+          <span aria-hidden="true">/</span>
+          <span>{lesson.serial}</span>
+        </p>
+        <p class="display-serial">{lesson.serial}</p>
+        <h1>{lesson.pageTitle}</h1>
+        <ul class="chips">
+          {lesson.difficulty && <li class:list={['chip', lesson.difficulty === '进阶' && 'chip-solid']}>{lesson.difficulty}</li>}
+          {lesson.theme && <li class="chip">{lesson.theme}</li>}
+          {lesson.term && <li class="chip">{lesson.term}</li>}
+          {lesson.day && <li class="chip">{lesson.day}</li>}
+          {lesson.date && <li class="chip">{lesson.date}</li>}
+        </ul>
+        {lesson.interviewFrequency && (
+          <p class="freq"><span>面试频率</span>{lesson.interviewFrequency}</p>
+        )}
+      </header>
+      <div class="prose" set:html={lesson.html} />
+      <nav class="pager" aria-label="系列前后篇">
+        {
+          lesson.prev ? (
+            <a class="pager-prev" href={lesson.prev.href}>
+              <span class="pager-dir">上一篇</span>
+              <span class="pager-serial">{lesson.prev.serial}</span>
+              <span class="pager-title">{lesson.prev.title}</span>
+            </a>
+          ) : (
+            <span />
+          )
+        }
+        {
+          lesson.next ? (
+            <a class="pager-next" href={lesson.next.href}>
+              <span class="pager-dir">下一篇</span>
+              <span class="pager-serial">{lesson.next.serial}</span>
+              <span class="pager-title">{lesson.next.title}</span>
+            </a>
+          ) : (
+            <span />
+          )
+        }
+      </nav>
+      <p class="source">
+        <a href={lesson.githubUrl} target="_blank" rel="noopener noreferrer">在 GitHub 上查看源文</a>
+      </p>
+    </div>
+  </article>
+</Base>

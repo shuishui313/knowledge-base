@@ -37,6 +37,10 @@ FDE 短课、AI 笔记、AI 算法笔记先写香港 FDE 招聘要考的那一�
 - AI 笔记：`AI-NN-中文名(English).md`，`NN` 按索引收录日期
 - AI 算法：`ALG-NN-中文名(English).md`，`NN` 为课序
 
+## 公开阅读站
+
+笔记正文仍在 `notes/`。`site/` 在构建时读取这些 Markdown，生成静态页。GitHub Actions 在推送到 `main` 后部署到 [https://shuishui313.github.io/knowledge-base/](https://shuishui313.github.io/knowledge-base/)。路径是 `/fde/FDE-NN/`、`/ai/AI-NN/`、`/algorithms/ALG-NN/`。网页不改写课文。新的一篇按原步骤写入笔记并更新该目录索引表后，下一次部署会收进去。
+
 ## 每日节奏
 
 大约 9:00 一节 FDE 短课，大约 9:30 一篇 AI 科普笔记。这是学习节奏。本仓库里没有对应的定时脚本。

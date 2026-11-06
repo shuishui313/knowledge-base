@@ -6,6 +6,8 @@ Personal hub for AI learning notes, algorithm lessons, Hong Kong FDE short lesso
 
 [Sections](#sections) · [Related projects](#related) · [Conventions](#conventions)
 
+Public reading, no login: [Hong Kong FDE learning site](https://shuishui313.github.io/knowledge-base/). Lesson bodies are in Chinese.
+
 <a id="sections"></a>
 
 ## Sections
@@ -39,6 +41,7 @@ Lesson files, glossary notes, and prompt template files linked from those indexe
 - Note bodies are Simplified Chinese. Directory indexes switch language with a top-bar link: `**中文** | [English](README.en.md)` on the Chinese file, `[中文](README.md) | **English**` on the English file. Do not use a details widget as the language switch
 - FDE lessons, glossary notes, and algorithm notes lead with what Hong Kong FDE hiring tests. Answers differ by company type: virtual bank or insurer, logistics, public counter, and AI product or solutions company. One type is written in depth; the others share a comparison table. Public interview write-ups are labeled 「公开面经里的常见问法」 and are not invented quotes from a named firm. Each note has a one-minute 「面试怎么说」, and one of the two quiz questions switches company type. See each folder index for the full rule
 - How to add a piece: [examples/recipes](examples/recipes/README.en.md). Agents start at [AGENTS.md](AGENTS.md) (in Chinese)
+- The public site lives in `site/` and is built from `notes/`. A push to `main` deploys it with GitHub Actions. Do not rewrite lesson prose for the site
 - This repo only edits notes, templates, and conventions kept here. Do not change EveryNews, MediaMgDashboard, or ruflo from here
 - Repo names: `kebab-case`
 
@@ -54,5 +57,6 @@ Lesson files, glossary notes, and prompt template files linked from those indexe
 | [examples/recipes/](examples/recipes/README.en.md) | Steps for adding a lesson, note, algorithm, or template. Guides are in Chinese |
 | [skills/knowledge-base/SKILL.md](skills/knowledge-base/SKILL.md) | Agent handbook (in Chinese) |
 | [docs/](docs/decisions.md) | [Decisions](docs/decisions.md) · [Declined](docs/declined.md) (in Chinese) |
+| [site/](site/) | Public reading site, built from `notes/` |
 
 </details>

@@ -6,6 +6,8 @@
 
 [分区](#sections) · [相关项目](#related) · [维护约定](#conventions)
 
+公开阅读，无需登录：[香港 FDE 学习](https://shuishui313.github.io/knowledge-base/)。
+
 <a id="sections"></a>
 
 ## 内容分区
@@ -37,6 +39,7 @@
 - 笔记正文用简体中文。目录索引用顶栏链接切换，中文是 `**中文** | [English](README.en.md)`，英文是 `[中文](README.md) | **English**`。不用 details 做语言切换
 - FDE 短课、AI 笔记和算法笔记都以香港 FDE 招聘要考的内容为主。答案按公司类型分开：虚拟银行/保险、物流、公营柜面、AI 产品或解决方案公司。一种公司写透，其余用一张对照表。公开面经只标明「公开面经里的常见问法」，不编造具名机构的原话。每篇有约一分钟的「面试怎么说」，自测两题里有一题换成另一类公司。细节见各目录索引
 - 怎么加一篇：[examples/recipes](examples/recipes/README.md)。代理先读 [AGENTS.md](AGENTS.md)
+- 公开阅读站在 `site/`，源是 `notes/` 的 Markdown。推 `main` 后由 GitHub Actions 部署。不要为了网页改写课文
 - 本仓库只改这里的笔记、模板和约定。不从这里改 EveryNews、MediaMgDashboard、ruflo
 - 仓库命名：`kebab-case`
 
@@ -52,5 +55,6 @@
 | [examples/recipes/](examples/recipes/README.md) | 加短课、笔记、算法、模板的步骤 |
 | [skills/knowledge-base/SKILL.md](skills/knowledge-base/SKILL.md) | 代理维护手册 |
 | [docs/](docs/decisions.md) | [已采纳](docs/decisions.md) · [明确不做](docs/declined.md) |
+| [site/](site/) | 公开阅读站。构建时读取 `notes/` |
 
 </details>

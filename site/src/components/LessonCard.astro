@@ -1,0 +1,30 @@
+---
+import type { Lesson } from '../lib/content'
+import { getTrack } from '../lib/content'
+
+interface Props {
+  lesson: Lesson
+  showTrack?: boolean
+}
+
+const { lesson, showTrack = false } = Astro.props
+const track = getTrack(lesson.track)
+---
+
+<a class="lesson-card" href={lesson.href}>
+  <div class="lesson-card-top">
+    <span class="serial">{lesson.serial}</span>
+    {lesson.day && <span class="day">{lesson.day}</span>}
+  </div>
+  <h3>{lesson.title}</h3>
+  <ul class="chips">
+    {lesson.difficulty && <li class:list={['chip', lesson.difficulty === '进阶' && 'chip-solid']}>{lesson.difficulty}</li>}
+    {lesson.theme && <li class="chip">{lesson.theme}</li>}
+    {lesson.term && <li class="chip">{lesson.term}</li>}
+  </ul>
+  {lesson.scenario && <p class="scenario">{lesson.scenario}</p>}
+  <p class="lesson-meta">
+    {showTrack && <span>{track.shortName}</span>}
+    {lesson.date && <span>{lesson.date}</span>}
+  </p>
+</a>

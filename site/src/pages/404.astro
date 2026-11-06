@@ -1,0 +1,18 @@
+---
+import Base from '../layouts/Base.astro'
+import { sitePath } from '../lib/paths'
+
+const home = sitePath('/')
+const description = '这个地址没有对应的笔记。'
+---
+
+<Base title="页面不存在" description={description} path={`${import.meta.env.BASE_URL}404.html`} current="home" robots="noindex">
+  <div class="wrap">
+    <section class="notfound">
+      <p class="notfound-num">404</p>
+      <h1>这一页不在课程里</h1>
+      <p>编号或路径没有对应的笔记。</p>
+      <a class="btn btn-primary" href={home}>回到首页</a>
+    </section>
+  </div>
+</Base>

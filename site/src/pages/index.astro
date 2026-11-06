@@ -1,0 +1,82 @@
+---
+import Base from '../layouts/Base.astro'
+import LessonCard from '../components/LessonCard.astro'
+import { latestLessons, loadTracks } from '../lib/content'
+import { sitePath } from '../lib/paths'
+
+const tracks = loadTracks()
+const latest = latestLessons(6)
+const first = tracks[0]?.lessons[0]
+const home = sitePath('/')
+const description = '按编号阅读的岗位、科普与算法短课，每篇大约五到八分钟。无需登录。'
+---
+
+<Base title="香港 FDE 学习" description={description} path={home} current="home">
+  <section class="hero">
+    <svg class="hero-instrument" viewBox="0 0 640 640" aria-hidden="true" focusable="false">
+      <circle cx="430" cy="250" r="210" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="1"></circle>
+      <circle cx="430" cy="250" r="148" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1"></circle>
+      <circle cx="430" cy="250" r="3.5" fill="rgba(255,255,255,0.7)"></circle>
+      <path d="M40 250 H620" stroke="rgba(255,255,255,0.16)" stroke-width="1"></path>
+      <g stroke="rgba(255,255,255,0.32)" stroke-width="1">
+        <path d="M150 242 v16 M230 238 v24 M310 242 v16 M390 238 v24 M470 242 v16 M550 238 v24"></path>
+      </g>
+    </svg>
+    <div class="wrap hero-copy">
+      <p class="eyebrow"><span class="eyebrow-en">shuishui313</span>公开阅读</p>
+      <h1>香港 FDE 学习</h1>
+      <p class="promise">按编号阅读的岗位、科普与算法短课，每篇大约五到八分钟。</p>
+      <div class="actions">
+        {first && <a class="btn btn-primary" href={first.href}>从 {first.serial} 开始</a>}
+        <a class="btn btn-ghost" href="#tracks">三条路径</a>
+      </div>
+      <p class="hero-range">
+        {
+          tracks.map((track, index) => (
+            <>
+              {index > 0 && <span aria-hidden="true"> · </span>}
+              <a href={track.href}>{track.rangeLabel}</a>
+            </>
+          ))
+        }
+      </p>
+    </div>
+  </section>
+
+  <section class="section" id="tracks">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker"><span>01</span>路径</p>
+        <h2>三条路径</h2>
+      </div>
+      <div class="track-grid">
+        {
+          tracks.map((track) => (
+            <a class="track-card" href={track.href}>
+              <span class="track-index">{track.index}</span>
+              <h3>{track.shortName}</h3>
+              <p class="promise-text">{track.promise}</p>
+              <p class="track-foot">
+                <span>{track.count} 篇</span>
+                <span>{track.rangeLabel}</span>
+              </p>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-silver" id="latest">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker"><span>02</span>最近</p>
+        <h2>最近更新</h2>
+        <p class="section-lede">按笔记里的日期，新的在前。</p>
+      </div>
+      <div class="lesson-grid">
+        {latest.map((lesson) => <LessonCard lesson={lesson} showTrack />)}
+      </div>
+    </div>
+  </section>
+</Base>

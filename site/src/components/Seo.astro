@@ -1,0 +1,29 @@
+---
+import { SITE_NAME, SITE_ORIGIN } from '../lib/paths'
+
+interface Props {
+  title: string
+  description: string
+  path: string
+  ogType?: 'website' | 'article'
+  robots?: string
+}
+
+const { title, description, path, ogType = 'website', robots } = Astro.props
+const canonical = new URL(path, Astro.site ?? SITE_ORIGIN).href
+const fullTitle = title === SITE_NAME ? title : `${title} · ${SITE_NAME}`
+---
+
+<title>{fullTitle}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+{robots && <meta name="robots" content={robots} />}
+<meta property="og:site_name" content={SITE_NAME} />
+<meta property="og:title" content={fullTitle} />
+<meta property="og:description" content={description} />
+<meta property="og:type" content={ogType} />
+<meta property="og:url" content={canonical} />
+<meta property="og:locale" content="zh_CN" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content={fullTitle} />
+<meta name="twitter:description" content={description} />

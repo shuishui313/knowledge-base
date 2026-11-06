@@ -37,11 +37,15 @@
 - 新的 Prompt 模板放 `prompt-templates/`，沿用 `Role / Task / Requirements / Output Format`（对照 `code-review.md`）。`handoff.md` 和 `term-research.md` 是已有变体，不要为了统一标题去改它们，除非任务明确要求。更新该目录两份索引。步骤见 [prompt-template](examples/recipes/prompt-template/README.md)
 - `prompt-templates/email-draft.md` 已经删除。文件不在就不要写回索引
 
+## 公开阅读站
+
+`site/` 用 `notes/` 的 Markdown 在构建时生成静态页，GitHub Actions 部署到 GitHub Pages。课文仍只改 `notes/`。不要为了网页改写课文。新的一篇只要写入笔记并更新该目录索引表，下一次部署会收进去。
+
 ## 推送
 
 任务写明直接推 `main` 时：先 `git fetch origin main`，在最新 `main` 上提交，再 `git push origin main`。不要为了这种任务另开分支。任务没写推 main 时，按调用方的分支约定，不擅自推 main。
 
-本仓库这次增加的是文档，没有可运行脚本。不要写「已在某环境测试通过」，除非命令真的跑过，并写明跑了什么、没跑什么。
+笔记本身没有单独的测试脚本。`site/` 可以构建。不要写「已在某环境测试通过」，除非命令真的跑过，并写明跑了什么、没跑什么。
 
 ## 不要从本仓库改的项目
 
@@ -51,4 +55,4 @@
 
 ## English
 
-The body above is Simplified Chinese. Use separate `README.md` and `README.en.md` files. Switch them with the top-bar links, never with a details widget. FDE lessons go scene, concept, Hong Kong example, 「面试怎么说」, drill, then two quiz questions, with answers inside `<details><summary>参考答案</summary>`. Algorithm notes open with hiring, then applicable and not-applicable scenarios, then the same lesson shape. Glossary notes keep their own headings and still lead with hiring, plus 「面试怎么说」 and exactly two quiz questions. All three lead with Hong Kong FDE hiring and differ by company type (virtual bank or insurer, logistics, public counter, AI product or solutions company): one type in depth, the others in one table. Label public interview patterns 「公开面经里的常见问法」; do not invent a quote, candidate story, or verbatim question from a named bank or insurer. One quiz question switches company type. Do not create or link an unwritten next lesson. Filenames include the serial from the start: `FDE-NN-YYYY-MM-DD-主题简述.md`, `AI-NN-中文名(English).md`, `ALG-NN-中文名(English).md`. Never reuse or renumber an assigned serial. Do not invent links. When the task says to push `main`, fetch `origin main` first and push that branch. When you add a note, lesson, algorithm, or template, update both README indexes. Do not change EveryNews, MediaMgDashboard, or ruflo from this repo.
+The body above is Simplified Chinese. Use separate `README.md` and `README.en.md` files. Switch them with the top-bar links, never with a details widget. FDE lessons go scene, concept, Hong Kong example, 「面试怎么说」, drill, then two quiz questions, with answers inside `<details><summary>参考答案</summary>`. Algorithm notes open with hiring, then applicable and not-applicable scenarios, then the same lesson shape. Glossary notes keep their own headings and still lead with hiring, plus 「面试怎么说」 and exactly two quiz questions. All three lead with Hong Kong FDE hiring and differ by company type (virtual bank or insurer, logistics, public counter, AI product or solutions company): one type in depth, the others in one table. Label public interview patterns 「公开面经里的常见问法」; do not invent a quote, candidate story, or verbatim question from a named bank or insurer. One quiz question switches company type. Do not create or link an unwritten next lesson. Filenames include the serial from the start: `FDE-NN-YYYY-MM-DD-主题简述.md`, `AI-NN-中文名(English).md`, `ALG-NN-中文名(English).md`. Never reuse or renumber an assigned serial. Do not invent links. When the task says to push `main`, fetch `origin main` first and push that branch. When you add a note, lesson, algorithm, or template, update both README indexes. Do not change EveryNews, MediaMgDashboard, or ruflo from this repo. `site/` builds the public reading site from `notes/` at build time; do not rewrite lesson prose for the site.

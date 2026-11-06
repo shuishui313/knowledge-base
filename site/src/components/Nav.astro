@@ -1,0 +1,29 @@
+---
+import { loadTracks } from '../lib/content'
+import { sitePath, type TrackId } from '../lib/paths'
+
+interface Props {
+  current: 'home' | TrackId
+}
+
+const { current } = Astro.props
+const tracks = loadTracks()
+const home = sitePath('/')
+const repo = 'https://github.com/shuishui313/knowledge-base'
+---
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="wordmark" href={home} aria-current={current === 'home' ? 'page' : undefined}>香港 FDE</a>
+    <nav class="nav-links" aria-label="路径">
+      {
+        tracks.map((track) => (
+          <a href={track.href} aria-current={current === track.id ? 'page' : undefined}>
+            {track.navLabel}
+          </a>
+        ))
+      }
+      <a href={repo} target="_blank" rel="noopener noreferrer">GitHub</a>
+    </nav>
+  </div>
+</header>

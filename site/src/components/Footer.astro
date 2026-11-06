@@ -1,0 +1,35 @@
+---
+import { loadTracks } from '../lib/content'
+import { sitePath } from '../lib/paths'
+
+const tracks = loadTracks()
+const home = sitePath('/')
+---
+
+<footer class="footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p class="footer-name"><a href={home}>香港 FDE 学习</a></p>
+      <p class="footer-blurb">个人学习笔记，公开阅读，无需登录。岗位、科普与算法，按编号阅读。</p>
+    </div>
+    <div class="footer-col">
+      <p class="footer-label">路径</p>
+      {tracks.map((track) => <a href={track.href}>{track.shortName}</a>)}
+    </div>
+    <div class="footer-col">
+      <p class="footer-label">源</p>
+      <a href="https://github.com/shuishui313/knowledge-base" target="_blank" rel="noopener noreferrer">GitHub 仓库</a>
+      {
+        tracks.map((track) => (
+          <a href={track.enHref} target="_blank" rel="noopener noreferrer">
+            {track.shortName} · 英文索引
+          </a>
+        ))
+      }
+    </div>
+  </div>
+  <div class="wrap footer-bar">
+    <span><a href="https://github.com/shuishui313">shuishui313</a> · 2026</span>
+    <span>笔记以 Markdown 为源</span>
+  </div>
+</footer>
