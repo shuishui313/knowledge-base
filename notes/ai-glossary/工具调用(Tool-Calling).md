@@ -1,3 +1,5 @@
+**AI-03**
+
 ## 一、定义
 
 工具调用（Tool Calling），也常叫函数调用（Function Calling）= 模型在需要外部事实或动作时，不直接把答案写完，而是先发出一份结构化请求：要调用的名字，加上参数。真正查库、调接口、做计算的是你的程序。程序把结果交回，模型再决定继续调用，或写给用户的那句话。
@@ -163,3 +165,8 @@ Schema 先解决的是形状。保单号是字符串还是数字、哪些字段�
 ## 五、一句话总结
 
 > **工具调用是让模型开口前先动手查或算，不是让它变得什么都记得。** 编排靠模型，真相靠工具。工具失败时要暴露失败，不要用流畅的中文把失败盖过去。
+
+## 延伸观看
+
+1. [GPT function calling in a nutshell](https://www.youtube.com/watch?v=i-oHvHejdsc) — Henrik Kniberg 的短解说：模型先发出调用请求，你的程序执行后再交回结果。
+2. [OpenAI Function Calling - Full Beginner Tutorial](https://www.youtube.com/watch?v=aqdWSYWC_LI) — Dave Ebbelaar 的专题短课（不是长系列普通网课）：把 function calling 从请求到执行走一遍。

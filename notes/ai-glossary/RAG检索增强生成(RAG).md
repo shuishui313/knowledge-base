@@ -1,3 +1,5 @@
+**AI-02**
+
 ## 一、定义
 
 RAG（Retrieval-Augmented Generation，检索增强生成）= 先从指定资料里查出相关片段，把片段放进提示词，再让模型按这些片段生成回答。
