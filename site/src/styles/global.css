@@ -385,7 +385,7 @@ a {
 }
 
 .track-card {
-  min-height: 320px;
+  min-height: 248px;
   padding: 32px;
   display: flex;
   flex-direction: column;
