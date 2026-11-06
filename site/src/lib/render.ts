@@ -24,29 +24,30 @@ function escapeHtml(value: string): string {
     .replace(/"/g, '&quot;')
 }
 
-function protect(source: string, pattern: RegExp): { text: string; slots: string[] } {
+function protect(source: string, pattern: RegExp, name: string): { text: string; slots: string[] } {
   const slots: string[] = []
   const text = source.replace(pattern, (match) => {
+    const token = `\u0000${name}${slots.length}\u0000`
     slots.push(match)
-    return `\u0000SLOT${slots.length - 1}\u0000`
+    return token
   })
   return { text, slots }
 }
 
-function restore(text: string, slots: string[]): string {
-  return text.replace(/\u0000SLOT(\d+)\u0000/g, (_, index: string) => slots[Number(index)] ?? '')
+function restore(text: string, slots: string[], name: string): string {
+  return text.replace(new RegExp(`\\u0000${name}(\\d+)\\u0000`, 'g'), (_, index: string) => slots[Number(index)] ?? '')
 }
 
 /** Notes use $$…$$ and \(…\). remark-math reads dollar delimiters. */
 export function normalizeMath(source: string): string {
-  const fenced = protect(source, /```[\s\S]*?```/g)
-  const coded = protect(fenced.text, /`[^`\n]*`/g)
+  const fenced = protect(source, /```[\s\S]*?```/g, 'FENCE')
+  const coded = protect(fenced.text, /`[^`\n]*`/g, 'CODE')
   const normalized = coded.text
     .replace(/\\\[([\s\S]+?)\\\]/g, (_, expr: string) => `\n$$\n${expr.trim()}\n$$\n`)
     .replace(/\\\(([\s\S]+?)\\\)/g, (_, expr: string) => `$${expr}$`)
     // A single-line $$...$$ is inline to remark-math. Notes use it as display math.
     .replace(/^\$\$([^\n]+?)\$\$[ \t]*$/gm, (_, expr: string) => `\n$$\n${expr.trim()}\n$$\n`)
-  return restore(restore(normalized, coded.slots), fenced.slots)
+  return restore(restore(normalized, coded.slots, 'CODE'), fenced.slots, 'FENCE')
 }
 
 function trackForSerial(prefix: string): TrackId {
@@ -197,6 +198,23 @@ function rehypeSectionBlocks() {
   }
 }
 
+function rehypeMermaidBlocks() {
+  return (tree: unknown) => {
+    visit(tree as never, 'element', (node: { tagName?: string; properties?: { className?: unknown }; children?: unknown[] }, _index: number | undefined, parent: { tagName?: string; properties?: Record<string, unknown>; children?: unknown[] } | undefined) => {
+      if (node.tagName !== 'code' || parent?.tagName !== 'pre') return
+      const className = node.properties?.className
+      const classes = Array.isArray(className)
+        ? className.map(String)
+        : typeof className === 'string'
+          ? className.split(/\s+/)
+          : []
+      if (!classes.includes('language-mermaid')) return
+      parent.properties = { ...(parent.properties ?? {}), className: ['mermaid'] }
+      parent.children = node.children
+    })
+  }
+}
+
 function toHtml(markdown: string, ctx: RenderContext): string {
   const file = unified()
     .use(remarkParse)
@@ -208,6 +226,7 @@ function toHtml(markdown: string, ctx: RenderContext): string {
     .use(rehypeSlug)
     .use(rehypeEnrich)
     .use(rehypeKatex, { throwOnError: true, strict: 'ignore', output: 'html' })
+    .use(rehypeMermaidBlocks)
     .use(rehypeSectionBlocks)
     .use(rehypeStringify, { allowDangerousHtml: true })
     .processSync(markdown)

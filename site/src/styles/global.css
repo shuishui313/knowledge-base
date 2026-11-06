@@ -764,6 +764,16 @@ a {
   font-size: inherit;
 }
 
+.prose pre.mermaid {
+  background: #fff;
+  text-align: center;
+}
+
+.prose pre.mermaid svg {
+  max-width: 100%;
+  height: auto;
+}
+
 .table-scroll {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;

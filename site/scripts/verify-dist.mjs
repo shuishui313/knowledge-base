@@ -110,6 +110,13 @@ assert(fde05.includes('pager-prev') && fde05.includes('/knowledge-base/fde/FDE-0
 assert(!fde05.includes('pager-next'), 'FDE-05 should not have a next lesson')
 assert(fde05.includes('/knowledge-base/fde/'), 'series index link missing')
 assert(fde05.includes('youtube.com/watch?v=5OYy_UtINo4'), 'FDE-05 youtube link missing')
+const fde03 = read('fde/FDE-03/index.html')
+const ai03 = read('ai/AI-03/index.html')
+assert(fde03.includes('class="mermaid"') && fde03.includes('客户经理工作台') && fde03.includes('risk-hints'), 'FDE-03 flowchart missing')
+assert(fde05.includes('class="mermaid"') && fde05.includes('赞助人') && fde05.includes('算交付'), 'FDE-05 flowchart missing')
+assert(ai02.includes('<pre') && ai02.includes('资料 → 切块'), 'AI-02 pipeline block missing')
+assert(ai03.includes('<pre') && ai03.includes('可用工具清单') && ai03.includes('get_claim_status') && ai03.includes('waiting_documents'), 'AI-03 code blocks missing')
+assert(!fde03.includes('<iframe') && !fde05.includes('<iframe') && !ai02.includes('<iframe') && !ai03.includes('<iframe'), 'diagrams must not use iframes')
 assert(fde05.includes('target="_blank"'), 'external links should open in a new tab')
 
 assert(ai01.includes('AI 幻觉'), 'AI-01 title missing')

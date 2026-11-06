@@ -148,6 +148,20 @@ function wireNotes() {
   }
 }
 
+async function bootDiagrams() {
+  const nodes = document.querySelectorAll<HTMLElement>('.mermaid')
+  if (!nodes.length) return
+  const { default: mermaid } = await import('mermaid')
+  mermaid.initialize({
+    startOnLoad: false,
+    securityLevel: 'antiscript',
+    theme: 'neutral',
+    fontFamily: 'Inter, "PingFang SC", "Noto Sans SC", sans-serif',
+    flowchart: { htmlLabels: true, curve: 'linear' },
+  })
+  await mermaid.run({ nodes: [...nodes] })
+}
+
 export function boot() {
   try {
     wireReflect()
@@ -155,4 +169,7 @@ export function boot() {
   } catch {
     /* storage can be blocked; the lesson still reads */
   }
+  void bootDiagrams().catch(() => {
+    /* leave the mermaid source visible if the diagram cannot render */
+  })
 }
