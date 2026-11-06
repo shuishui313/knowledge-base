@@ -19,10 +19,13 @@ Lesson bodies are in Simplified Chinese. This page is the bilingual index. Examp
 | FDE-03 | 2026-11-04 | 3 | Making it technical | Beginner | [Turn one sentence into a shippable design](FDE-03-2026-11-04-技术落地-一句话拆成可交付方案.md) (in Chinese) |
 | FDE-04 | 2026-11-05 | 4 | Delivery and communication | Beginner | [When the client says "close enough"](FDE-04-2026-11-05-交付沟通-差不多就行时对齐范围.md) (in Chinese) |
 | FDE-05 | 2026-11-06 | 5 | The role | Advanced | [Who signs off: sponsor, counterpart, acceptor](FDE-05-2026-11-06-岗位-谁说了算-干系人与验收人.md) (in Chinese) |
+| FDE-06 | 2026-11-07 | 6 | The Hong Kong market | Advanced | [Same FDE title, four proofs employers want](FDE-06-2026-11-07-市场-四类雇主要你证明什么.md) (in Chinese) |
 
 Day 3 and Day 4 share one example: risk hints on a virtual-bank relationship manager's workbench. Day 3 splits the ask into API, data, and integration. Day 4 turns the same sentence into scope, an out-of-scope list, and a one-week plan.
 
 Day 5 returns to the role theme with a claims-pilot stakeholder map: sponsor, day-to-day counterpart, and the person who actually accepts the work. It does not repeat Day 1's FDE-versus-SWE comparison.
+
+Day 6 returns to the market theme: employer type decides what proof to bring and who signs off.
 
 <a id="conventions"></a>
 

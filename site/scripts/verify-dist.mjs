@@ -44,7 +44,7 @@ assert(home.includes('/knowledge-base/algorithms/'), 'home missing algorithms li
 assert(home.includes('三条路径'), 'homepage path section missing')
 assert(home.includes('岗位 · 科普 · 算法'), 'home supporting line missing')
 
-for (const serial of ['FDE-01', 'FDE-02', 'FDE-03', 'FDE-04', 'FDE-05']) {
+for (const serial of ['FDE-01', 'FDE-02', 'FDE-03', 'FDE-04', 'FDE-05', 'FDE-06']) {
   assert(fde.includes(`/knowledge-base/fde/${serial}/`), `fde index missing ${serial}`)
   assert(exists(`fde/${serial}/index.html`), `missing page ${serial}`)
 }
@@ -107,9 +107,14 @@ assert(!fde01.includes('README.md'), 'relative readme link was not rewritten')
 assert(!fde01.includes('<iframe'), 'unexpected iframe')
 
 assert(fde05.includes('pager-prev') && fde05.includes('/knowledge-base/fde/FDE-04/'), 'FDE-05 prev missing')
-assert(!fde05.includes('pager-next'), 'FDE-05 should not have a next lesson')
+assert(fde05.includes('pager-next') && fde05.includes('/knowledge-base/fde/FDE-06/'), 'FDE-05 next missing')
 assert(fde05.includes('/knowledge-base/fde/'), 'series index link missing')
 assert(fde05.includes('youtube.com/watch?v=5OYy_UtINo4'), 'FDE-05 youtube link missing')
+const fde06 = read('fde/FDE-06/index.html')
+assert(fde06.includes('pager-prev') && fde06.includes('/knowledge-base/fde/FDE-05/'), 'FDE-06 prev missing')
+assert(!fde06.includes('pager-next'), 'FDE-06 should not have a next lesson')
+assert(fde06.includes('同一句 FDE，四类雇主要你证明什么'), 'FDE-06 title missing')
+assert(fde06.includes('class="mermaid"') && fde06.includes('雇主类型') && fde06.includes('Why FDE'), 'FDE-06 flowchart missing')
 const fde03 = read('fde/FDE-03/index.html')
 const ai03 = read('ai/AI-03/index.html')
 assert(fde03.includes('class="mermaid"') && fde03.includes('客户经理工作台') && fde03.includes('risk-hints'), 'FDE-03 flowchart missing')
