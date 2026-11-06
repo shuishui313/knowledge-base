@@ -6,7 +6,7 @@ Personal hub for AI learning notes, algorithm lessons, Hong Kong FDE short lesso
 
 [Sections](#sections) · [Related projects](#related) · [Conventions](#conventions)
 
-Public reading, no login: [Hong Kong FDE learning site](https://shuishui313.github.io/knowledge-base/). Lesson bodies are in Chinese.
+Public reading, no login: [前线课](https://shuishui313.github.io/knowledge-base/). Lesson bodies are in Chinese.
 
 <a id="sections"></a>
 

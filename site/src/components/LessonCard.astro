@@ -11,7 +11,7 @@ const { lesson, showTrack = false } = Astro.props
 const track = getTrack(lesson.track)
 ---
 
-<a class="lesson-card" href={lesson.href}>
+<a class="lesson-card" href={lesson.href} data-serial={lesson.serial}>
   <div class="lesson-card-top">
     <span class="serial">{lesson.serial}</span>
     {lesson.day && <span class="day">{lesson.day}</span>}
@@ -22,8 +22,8 @@ const track = getTrack(lesson.track)
     {lesson.theme && <li class="chip">{lesson.theme}</li>}
     {lesson.term && <li class="chip">{lesson.term}</li>}
   </ul>
-  {lesson.scenario && <p class="scenario">{lesson.scenario}</p>}
   <p class="lesson-meta">
+    <span class="done-flag" data-done-flag={lesson.serial} hidden>已学完</span>
     {showTrack && <span>{track.shortName}</span>}
     {lesson.date && <span>{lesson.date}</span>}
   </p>

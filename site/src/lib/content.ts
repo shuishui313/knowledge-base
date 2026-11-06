@@ -55,7 +55,7 @@ const TRACK_META: Record<
 > = {
   fde: {
     index: '01',
-    name: '香港 FDE 短课',
+    name: 'FDE 短课',
     shortName: 'FDE 短课',
     navLabel: '短课',
     dir: 'hk-fde',

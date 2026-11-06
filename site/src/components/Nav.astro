@@ -3,18 +3,18 @@ import { loadTracks } from '../lib/content'
 import { sitePath, type TrackId } from '../lib/paths'
 
 interface Props {
-  current: 'home' | TrackId
+  current: 'home' | 'notes' | TrackId
 }
 
 const { current } = Astro.props
 const tracks = loadTracks()
 const home = sitePath('/')
-const repo = 'https://github.com/shuishui313/knowledge-base'
+const notes = sitePath('/notes')
 ---
 
 <header class="nav">
   <div class="wrap nav-inner">
-    <a class="wordmark" href={home} aria-current={current === 'home' ? 'page' : undefined}>香港 FDE</a>
+    <a class="wordmark" href={home} aria-current={current === 'home' ? 'page' : undefined}>前线课</a>
     <nav class="nav-links" aria-label="路径">
       {
         tracks.map((track) => (
@@ -23,7 +23,7 @@ const repo = 'https://github.com/shuishui313/knowledge-base'
           </a>
         ))
       }
-      <a href={repo} target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href={notes} aria-current={current === 'notes' ? 'page' : undefined}>笔记</a>
     </nav>
   </div>
 </header>

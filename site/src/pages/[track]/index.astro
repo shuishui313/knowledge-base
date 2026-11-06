@@ -17,23 +17,25 @@ export function getStaticPaths() {
 
 const { track } = Astro.props as Props
 const current = track.id as TrackId
-const description = track.lede
+const serials = track.lessons.map((lesson) => lesson.serial).join(' ')
+const description = `${track.shortName}。${track.rangeLabel}。`
 ---
 
-<Base title={track.name} description={description} path={track.href} current={current}>
+<Base title={track.shortName} description={description} path={track.href} current={current}>
   <header class="mast">
     <div class="wrap">
       <p class="kicker"><span>{track.index}</span>路径</p>
-      <h1>{track.name}</h1>
-      <p class="lede">{track.lede}</p>
+      <h1>{track.shortName}</h1>
       <p class="mast-meta">
-        <span>{track.count} 篇</span>
-        <span aria-hidden="true">·</span>
         <span>{track.rangeLabel}</span>
+        <span aria-hidden="true">·</span>
+        <span data-progress data-total={track.count} data-serials={serials}>0/{track.count}</span>
         <span aria-hidden="true">·</span>
         <a href={track.enHref} target="_blank" rel="noopener noreferrer">英文索引</a>
       </p>
-      <p class="mast-note">课文为简体中文。</p>
+      <div class="meter mast-meter" aria-hidden="true">
+        <span data-meter data-serials={serials}></span>
+      </div>
     </div>
   </header>
   <section class="catalog">

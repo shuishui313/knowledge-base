@@ -144,6 +144,45 @@ function rehypeEnrich() {
   }
 }
 
+function rehypeSectionBlocks() {
+  return (tree: { children?: Array<Record<string, unknown>> }) => {
+    const children = tree.children
+    if (!children) return
+    const next: Array<Record<string, unknown>> = []
+    let section: { children: Array<Record<string, unknown>> } | null = null
+    let index = 0
+    for (const child of children) {
+      const isHeading = child.type === 'element' && child.tagName === 'h2'
+      if (isHeading) {
+        index += 1
+        const label = String(index).padStart(2, '0')
+        const existing = Array.isArray(child.children) ? child.children : []
+        child.children = [
+          {
+            type: 'element',
+            tagName: 'span',
+            properties: { className: ['block-index'], ariaHidden: 'true' },
+            children: [{ type: 'text', value: label }],
+          },
+          ...existing,
+        ]
+        section = {
+          type: 'element',
+          tagName: 'section',
+          properties: { className: ['block'] },
+          children: [child],
+        }
+        next.push(section as unknown as Record<string, unknown>)
+      } else if (section) {
+        section.children.push(child)
+      } else {
+        next.push(child)
+      }
+    }
+    tree.children = next
+  }
+}
+
 function toHtml(markdown: string, ctx: RenderContext): string {
   const file = unified()
     .use(remarkParse)
@@ -155,6 +194,7 @@ function toHtml(markdown: string, ctx: RenderContext): string {
     .use(rehypeSlug)
     .use(rehypeEnrich)
     .use(rehypeKatex, { throwOnError: true, strict: 'ignore', output: 'html' })
+    .use(rehypeSectionBlocks)
     .use(rehypeStringify, { allowDangerousHtml: true })
     .processSync(markdown)
   return String(file)

@@ -2,7 +2,7 @@ export type TrackId = 'fde' | 'ai' | 'algorithms'
 
 export const REPO = 'shuishui313/knowledge-base'
 export const SITE_ORIGIN = 'https://shuishui313.github.io'
-export const SITE_NAME = '香港 FDE 学习'
+export const SITE_NAME = '前线课'
 
 export function sitePath(pathname: string): string {
   const raw = import.meta.env.BASE_URL || '/knowledge-base/'

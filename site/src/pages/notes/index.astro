@@ -1,0 +1,35 @@
+---
+import Base from '../../layouts/Base.astro'
+import { allLessons, getTrack } from '../../lib/content'
+import { sitePath } from '../../lib/paths'
+
+const path = sitePath('/notes')
+const description = '写在课后面的反思，只留在这台浏览器里。'
+const catalog = allLessons().map((lesson) => ({
+  serial: lesson.serial,
+  title: lesson.title,
+  track: lesson.track,
+  trackName: getTrack(lesson.track).shortName,
+  href: lesson.href,
+}))
+---
+
+<Base title="笔记" description={description} path={path} current="notes">
+  <header class="mast">
+    <div class="wrap">
+      <p class="kicker"><span>04</span>笔记</p>
+      <h1>笔记</h1>
+      <p class="lede">只留在这台浏览器里。</p>
+    </div>
+  </header>
+  <section class="catalog notes-page">
+    <div class="wrap">
+      <p class="notes-empty" data-notes-empty>还没有写下反思。</p>
+      <div data-notes-root></div>
+      <p class="notes-actions">
+        <button type="button" class="done-toggle" data-export hidden>导出 Markdown</button>
+      </p>
+    </div>
+  </section>
+  <script is:inline id="qxk-catalog" type="application/json" set:html={JSON.stringify(catalog)}></script>
+</Base>

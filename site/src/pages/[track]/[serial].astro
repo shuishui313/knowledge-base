@@ -20,7 +20,7 @@ const current = lesson.track as TrackId
 const title = `${lesson.serial} · ${lesson.pageTitle}`
 ---
 
-<Base title={title} description={lesson.description} path={lesson.href} current={current} ogType="article">
+<Base title={title} description={lesson.description} path={lesson.href} current={current} ogType="article" lessonSerial={lesson.serial}>
   <Fragment slot="head">
     {lesson.prev && <link rel="prev" href={lesson.prev.href} />}
     {lesson.next && <link rel="next" href={lesson.next.href} />}
@@ -45,6 +45,7 @@ const title = `${lesson.serial} · ${lesson.pageTitle}`
         {lesson.interviewFrequency && (
           <p class="freq"><span>面试频率</span>{lesson.interviewFrequency}</p>
         )}
+        <button type="button" class="done-toggle" data-done-toggle={lesson.serial} hidden>标记已学完</button>
       </header>
       <div class="prose" set:html={lesson.html} />
       <nav class="pager" aria-label="系列前后篇">
@@ -74,6 +75,10 @@ const title = `${lesson.serial} · ${lesson.pageTitle}`
       <p class="source">
         <a href={lesson.githubUrl} target="_blank" rel="noopener noreferrer">在 GitHub 上查看源文</a>
       </p>
+      <section class="reflect" data-reflect={lesson.serial} hidden>
+        <h2>反思</h2>
+        <textarea aria-label="反思" placeholder={'今天记住的一点\n面试时我会怎么说\n还有什么没弄清'}></textarea>
+      </section>
     </div>
   </article>
 </Base>
