@@ -22,8 +22,11 @@ const track = getTrack(lesson.track)
     {lesson.theme && <li class="chip">{lesson.theme}</li>}
     {lesson.term && <li class="chip">{lesson.term}</li>}
   </ul>
-  <p class="lesson-meta">
-    {showTrack && <span>{track.shortName}</span>}
-    {lesson.date && <span>{lesson.date}</span>}
-  </p>
+  {
+    showTrack && (
+      <p class="lesson-meta">
+        <span>{track.shortName}</span>
+      </p>
+    )
+  }
 </a>
