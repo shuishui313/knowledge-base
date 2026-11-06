@@ -13,6 +13,12 @@ export interface LessonLink {
   href: string
 }
 
+export interface SectionHeading {
+  id: string
+  index: string
+  title: string
+}
+
 export interface Lesson {
   track: TrackId
   serial: string
@@ -30,6 +36,9 @@ export interface Lesson {
   href: string
   description: string
   html: string
+  sections: SectionHeading[]
+  showToc: boolean
+  related: LessonLink[]
   prev: LessonLink | null
   next: LessonLink | null
 }
@@ -264,6 +273,41 @@ function rangeLabel(lessons: Lesson[]): string {
   return `${first} – ${last}`
 }
 
+const CURATED_RELATED: Record<string, string[]> = {
+  'AI-01': ['FDE-01', 'AI-02', 'AI-03'],
+  'AI-02': ['AI-01', 'AI-03', 'FDE-01'],
+  'AI-03': ['AI-01', 'AI-02', 'FDE-01'],
+  'ALG-01': ['FDE-01'],
+}
+
+const topicHits = new Map<string, string[]>()
+
+function topicsInFdeLesson(source: string): string[] {
+  const hits: string[] = []
+  if (source.includes('幻觉')) hits.push('AI-01')
+  if (source.includes('检索增强') || /\bRAG\b/.test(source)) hits.push('AI-02')
+  if (source.includes('工具调用') || source.includes('函数调用')) hits.push('AI-03')
+  return hits
+}
+
+function extractSections(html: string): SectionHeading[] {
+  const sections: SectionHeading[] = []
+  const pattern = /<h2 id="([^"]*)"><span class="block-index"[^>]*>([^<]+)<\/span>([^<]*)<\/h2>/g
+  for (const match of html.matchAll(pattern)) {
+    sections.push({
+      id: match[1] ?? '',
+      index: (match[2] ?? '').trim(),
+      title: (match[3] ?? '').trim(),
+    })
+  }
+  return sections
+}
+
+function wantsToc(track: TrackId, count: number): boolean {
+  if (track === 'fde') return count >= 8
+  return count >= 6
+}
+
 function loadTrack(id: TrackId): Track {
   const meta = TRACK_META[id]
   const dir = join(NOTES_ROOT, meta.dir)
@@ -297,6 +341,9 @@ function loadTrack(id: TrackId): Track {
     const doc = splitDocument(source)
     const metaLine = parseMetaLine(doc.metaLine)
     const date = prefer(column(headers, row, ['日期', '收录日期']), metaLine.date)
+    if (id === 'fde') topicHits.set(serial, topicsInFdeLesson(source))
+    const html = renderMarkdown(doc.body, { track: id })
+    const sections = extractSections(html)
     const lesson: Lesson = {
       track: id,
       serial,
@@ -313,7 +360,10 @@ function loadTrack(id: TrackId): Track {
       githubUrl: githubBlob(`notes/${meta.dir}/${filename}`),
       href: sitePath(`/${id}/${serial}`),
       description: clip(firstParagraph(doc.body) || doc.pageTitle || linked.text),
-      html: renderMarkdown(doc.body, { track: id }),
+      html,
+      sections,
+      showToc: wantsToc(id, sections.length),
+      related: [],
       prev: null,
       next: null,
     }
@@ -345,10 +395,30 @@ function loadTrack(id: TrackId): Track {
 
 let cache: Track[] | null = null
 
+function attachRelated(tracks: Track[]) {
+  const bySerial = new Map(tracks.flatMap((track) => track.lessons).map((lesson) => [lesson.serial, lesson]))
+  for (const track of tracks) {
+    for (const lesson of track.lessons) {
+      const serials = [...(CURATED_RELATED[lesson.serial] ?? []), ...(topicHits.get(lesson.serial) ?? [])]
+      const seen = new Set<string>()
+      lesson.related = []
+      for (const serial of serials) {
+        if (serial === lesson.serial || seen.has(serial)) continue
+        const target = bySerial.get(serial)
+        if (!target) continue
+        seen.add(serial)
+        lesson.related.push({ serial: target.serial, title: target.title, href: target.href })
+      }
+    }
+  }
+}
+
 export function loadTracks(): Track[] {
   if (!cache) {
     assertPromises()
-    cache = (['fde', 'ai', 'algorithms'] as const).map(loadTrack)
+    const tracks = (['fde', 'ai', 'algorithms'] as const).map(loadTrack)
+    attachRelated(tracks)
+    cache = tracks
   }
   return cache
 }

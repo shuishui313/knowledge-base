@@ -59,6 +59,7 @@ function wireReflect() {
   panel.hidden = false
   const saveButton = panel.querySelector<HTMLButtonElement>('[data-save]')
   const status = panel.querySelector<HTMLElement>('[data-saved]')
+  const notesLink = panel.querySelector<HTMLElement>('[data-notes-link]')
   let timer = 0
   let fade = 0
   const save = () => {
@@ -69,6 +70,7 @@ function wireReflect() {
     writeNotes(notes)
   }
   const confirmSaved = () => {
+    if (notesLink) notesLink.hidden = false
     if (!status) return
     status.hidden = false
     requestAnimationFrame(() => status.classList.add('is-on'))

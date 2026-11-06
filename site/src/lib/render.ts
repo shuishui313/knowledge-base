@@ -144,17 +144,17 @@ function rehypeEnrich() {
   }
 }
 
-function nodeText(node: unknown): string {
-  if (!node || typeof node !== 'object') return ''
-  const record = node as { type?: string; value?: string; children?: unknown[] }
-  if (record.type === 'text') return record.value ?? ''
-  return (record.children ?? []).map(nodeText).join('')
-}
+const CHINESE_ENUM_PREFIX = /^(?:（[一二三四五六七八九十百零]+）|\([一二三四五六七八九十0-9]+\)|[一二三四五六七八九十百零]+[、.．])\s*/
 
-/** Headings such as 「一、定义」 already carry a number. Do not prefix another. */
-function headingHasOwnNumber(node: Record<string, unknown>): boolean {
-  const text = nodeText(node).trim()
-  return /^(?:[一二三四五六七八九十百零]+[、.．]|[0-9]{1,2}[、.．.)]|（[一二三四五六七八九十0-9]+）|\([0-9]+\))/.test(text)
+/** Drop a leading 「一、」 / 「（一）」 so the tabular index is the only number. */
+function stripChineseEnumPrefix(node: Record<string, unknown>) {
+  const children = Array.isArray(node.children) ? (node.children as Array<Record<string, unknown>>) : []
+  for (const child of children) {
+    if (child.type !== 'text' || typeof child.value !== 'string') continue
+    if (!child.value.trim()) continue
+    child.value = child.value.replace(CHINESE_ENUM_PREFIX, '')
+    return
+  }
 }
 
 function rehypeSectionBlocks() {
@@ -164,25 +164,22 @@ function rehypeSectionBlocks() {
     const next: Array<Record<string, unknown>> = []
     let section: { children: Array<Record<string, unknown>> } | null = null
     let index = 0
-    const headings = children.filter((child) => child.type === 'element' && child.tagName === 'h2')
-    const lessonNumbersItself = headings.some((heading) => headingHasOwnNumber(heading))
     for (const child of children) {
       const isHeading = child.type === 'element' && child.tagName === 'h2'
       if (isHeading) {
+        stripChineseEnumPrefix(child)
         const existing = Array.isArray(child.children) ? child.children : []
-        if (!lessonNumbersItself && !headingHasOwnNumber(child)) {
-          index += 1
-          const label = String(index).padStart(2, '0')
-          child.children = [
-            {
-              type: 'element',
-              tagName: 'span',
-              properties: { className: ['block-index'], ariaHidden: 'true' },
-              children: [{ type: 'text', value: label }],
-            },
-            ...existing,
-          ]
-        }
+        index += 1
+        const label = String(index).padStart(2, '0')
+        child.children = [
+          {
+            type: 'element',
+            tagName: 'span',
+            properties: { className: ['block-index'], ariaHidden: 'true' },
+            children: [{ type: 'text', value: label }],
+          },
+          ...existing,
+        ]
         section = {
           type: 'element',
           tagName: 'section',
