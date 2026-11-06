@@ -163,8 +163,8 @@ a {
   color: #fff;
   min-height: calc(100svh - var(--nav-h));
   display: flex;
-  align-items: flex-end;
-  padding: 72px 0 64px;
+  align-items: center;
+  padding: 64px 0 14vh;
 }
 
 .hero-instrument {
@@ -551,11 +551,12 @@ a {
 
 .lesson h1 {
   margin: 16px 0 0;
-  max-width: 18em;
-  font-size: clamp(28px, 3vw, 40px);
+  max-width: none;
+  font-size: clamp(28px, 2.6vw, 36px);
   letter-spacing: -0.025em;
   line-height: 1.25;
-  text-wrap: balance;
+  text-wrap: wrap;
+  overflow-wrap: break-word;
 }
 
 .chips {
@@ -1137,20 +1138,55 @@ a {
   white-space: pre-wrap;
 }
 
+.reflect-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.reflect-save {
+  min-height: 40px;
+  padding: 0 16px;
+  border: 1px solid var(--ink);
+  border-radius: 4px;
+  background: var(--ink);
+  color: #fff;
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.reflect-save:hover {
+  background: #000;
+}
+
+.reflect-status {
+  color: var(--muted);
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 280ms ease;
+}
+
+.reflect-status.is-on {
+  opacity: 1;
+}
+
 .notes-page {
   background: var(--bg-paper);
-  padding: 48px 0 96px;
+  padding: 32px 0 40px;
 }
 
 .notes-head {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .notes-head h1 {
   margin: 0;
-  font-size: clamp(40px, 5vw, 64px);
+  font-size: clamp(32px, 4vw, 44px);
   letter-spacing: -0.03em;
-  line-height: 1.05;
+  line-height: 1.1;
 }
 
 .notes-note {
@@ -1272,13 +1308,39 @@ a {
   margin-bottom: 12px;
 }
 
+@media (min-width: 1100px) {
+  .lesson h1 {
+    white-space: nowrap;
+  }
+}
+
 @media (max-width: 800px) {
   .prose .block {
     padding: 20px 18px 8px;
   }
 
   .notes-page {
-    padding: 32px 0 64px;
+    padding: 24px 0 32px;
+  }
+
+  .nav-inner {
+    align-items: flex-start;
+    gap: 2px 12px;
+  }
+
+  .wordmark {
+    font-size: 15px;
+    line-height: 32px;
+  }
+
+  .nav-links {
+    flex: 1 1 100%;
+    gap: 0;
+  }
+
+  .nav-links a {
+    padding: 6px 10px 6px 0;
+    font-size: 13px;
   }
 }
 

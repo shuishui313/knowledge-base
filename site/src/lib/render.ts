@@ -144,6 +144,19 @@ function rehypeEnrich() {
   }
 }
 
+function nodeText(node: unknown): string {
+  if (!node || typeof node !== 'object') return ''
+  const record = node as { type?: string; value?: string; children?: unknown[] }
+  if (record.type === 'text') return record.value ?? ''
+  return (record.children ?? []).map(nodeText).join('')
+}
+
+/** Headings such as 「一、定义」 already carry a number. Do not prefix another. */
+function headingHasOwnNumber(node: Record<string, unknown>): boolean {
+  const text = nodeText(node).trim()
+  return /^(?:[一二三四五六七八九十百零]+[、.．]|[0-9]{1,2}[、.．.)]|（[一二三四五六七八九十0-9]+）|\([0-9]+\))/.test(text)
+}
+
 function rehypeSectionBlocks() {
   return (tree: { children?: Array<Record<string, unknown>> }) => {
     const children = tree.children
@@ -151,21 +164,25 @@ function rehypeSectionBlocks() {
     const next: Array<Record<string, unknown>> = []
     let section: { children: Array<Record<string, unknown>> } | null = null
     let index = 0
+    const headings = children.filter((child) => child.type === 'element' && child.tagName === 'h2')
+    const lessonNumbersItself = headings.some((heading) => headingHasOwnNumber(heading))
     for (const child of children) {
       const isHeading = child.type === 'element' && child.tagName === 'h2'
       if (isHeading) {
-        index += 1
-        const label = String(index).padStart(2, '0')
         const existing = Array.isArray(child.children) ? child.children : []
-        child.children = [
-          {
-            type: 'element',
-            tagName: 'span',
-            properties: { className: ['block-index'], ariaHidden: 'true' },
-            children: [{ type: 'text', value: label }],
-          },
-          ...existing,
-        ]
+        if (!lessonNumbersItself && !headingHasOwnNumber(child)) {
+          index += 1
+          const label = String(index).padStart(2, '0')
+          child.children = [
+            {
+              type: 'element',
+              tagName: 'span',
+              properties: { className: ['block-index'], ariaHidden: 'true' },
+              children: [{ type: 'text', value: label }],
+            },
+            ...existing,
+          ]
+        }
         section = {
           type: 'element',
           tagName: 'section',

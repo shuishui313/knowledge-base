@@ -57,7 +57,10 @@ function wireReflect() {
   if (!serial || !field) return
   field.value = readNotes()[serial] || ''
   panel.hidden = false
+  const saveButton = panel.querySelector<HTMLButtonElement>('[data-save]')
+  const status = panel.querySelector<HTMLElement>('[data-saved]')
   let timer = 0
+  let fade = 0
   const save = () => {
     const notes = readNotes()
     const text = field.value
@@ -65,11 +68,28 @@ function wireReflect() {
     else delete notes[serial]
     writeNotes(notes)
   }
+  const confirmSaved = () => {
+    if (!status) return
+    status.hidden = false
+    requestAnimationFrame(() => status.classList.add('is-on'))
+    window.clearTimeout(fade)
+    fade = window.setTimeout(() => {
+      status.classList.remove('is-on')
+      window.setTimeout(() => {
+        status.hidden = true
+      }, 300)
+    }, 1600)
+  }
   field.addEventListener('input', () => {
     window.clearTimeout(timer)
     timer = window.setTimeout(save, 300)
   })
   field.addEventListener('blur', save)
+  saveButton?.addEventListener('click', () => {
+    window.clearTimeout(timer)
+    save()
+    confirmSaved()
+  })
 }
 
 function wireNotes() {

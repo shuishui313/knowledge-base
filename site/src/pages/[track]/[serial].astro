@@ -77,6 +77,10 @@ const title = `${lesson.serial} · ${lesson.pageTitle}`
       <section class="reflect" data-reflect={lesson.serial} hidden>
         <h2>反思</h2>
         <textarea aria-label="反思" placeholder={'今天记住的一点\n面试时我会怎么说\n还有什么没弄清'}></textarea>
+        <div class="reflect-actions">
+          <button type="button" class="reflect-save" data-save>保存</button>
+          <span class="reflect-status" data-saved hidden>已保存</span>
+        </div>
       </section>
     </div>
   </article>
