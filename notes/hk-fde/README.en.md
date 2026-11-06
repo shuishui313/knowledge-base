@@ -1,6 +1,6 @@
 # Hong Kong FDE short lessons
 
-Four beginner lessons, in date order. Each one is about a 5–8 minute read: scene, concept, Hong Kong example, a short drill, then two quiz questions. Standard answers stay collapsed after the quiz. Try them before you open them.
+Lessons are in date order. The first four are beginner; from Day 5 the same four themes return with new examples at advanced level. Each one is about a 5–8 minute read: scene, concept, Hong Kong example, a short drill, then two quiz questions. Standard answers stay collapsed after the quiz. Try them before you open them.
 
 [中文](README.md) | **English**
 
@@ -18,8 +18,11 @@ Lesson bodies are in Simplified Chinese. This page is the bilingual index. Examp
 | 2026-11-03 | 2 | The Hong Kong market | Beginner | [Reading an HK FDE job description](2026-11-03-市场-读懂香港FDE-JD.md) (in Chinese) |
 | 2026-11-04 | 3 | Making it technical | Beginner | [Turn one sentence into a shippable design](2026-11-04-技术落地-一句话拆成可交付方案.md) (in Chinese) |
 | 2026-11-05 | 4 | Delivery and communication | Beginner | [When the client says "close enough"](2026-11-05-交付沟通-差不多就行时对齐范围.md) (in Chinese) |
+| 2026-11-06 | 5 | The role | Advanced | [Who signs off: sponsor, counterpart, acceptor](2026-11-06-岗位-谁说了算-干系人与验收人.md) (in Chinese) |
 
 Day 3 and Day 4 share one example: risk hints on a virtual-bank relationship manager's workbench. Day 3 splits the ask into API, data, and integration. Day 4 turns the same sentence into scope, an out-of-scope list, and a one-week plan.
+
+Day 5 returns to the role theme with a claims-pilot stakeholder map: sponsor, day-to-day counterpart, and the person who actually accepts the work. It does not repeat Day 1's FDE-versus-SWE comparison.
 
 <a id="conventions"></a>
 
