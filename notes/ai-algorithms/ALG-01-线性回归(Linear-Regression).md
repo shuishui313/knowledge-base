@@ -135,4 +135,4 @@ AI 产品、解决方案公司或 Palantir 这类 FDE 流程那边，同一句�
 1. [Linear Regression, Clearly Explained!!!](https://www.youtube.com/watch?v=nk2CQITm_eo) — StatQuest with Josh Starmer 的解说：用最小二乘拟合直线，再讲 \(R^2\)。
 2. [Multiple Regression, Clearly Explained!!!](https://www.youtube.com/watch?v=zITIFTsivN8) — 同一作者的续集短解说（不是普通长网课）：特征多于一个时，直线怎么读。
 
-下一篇预告：逻辑回归（ALG-02）——目标变成「过 / 不过」时用它。 · [回到索引](README.md)
+下一篇：[逻辑回归（ALG-02）](ALG-02-逻辑回归(Logistic-Regression).md)——目标变成「过 / 不过」时用它。 · [回到索引](README.md)

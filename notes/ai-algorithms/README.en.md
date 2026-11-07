@@ -15,14 +15,14 @@ Lesson bodies are in Simplified Chinese. This page is the bilingual index. Examp
 | No. | Category | Level | Interview frequency | Applicable scenarios | Title |
 |-----|----------|-------|---------------------|----------------------|-------|
 | ALG-01 | Regression | Beginner | High in finance; deriving the formula is rare in FDE write-ups | Predict a continuous number (premium, limit, handling days). Bank or insurer: an explainable baseline. AI product company: a comparison line, not a derivation | [Linear regression](ALG-01-线性回归(Linear-Regression).md) (in Chinese) |
+| ALG-02 | Classification | Beginner | High in banking and insurance; deriving maximum likelihood is rare in FDE write-ups | Predict the probability of a yes-or-no outcome (manual review, fraud, delay). Bank or insurer: thresholds, recall, and odds ratios. AI product company: a classification baseline to compare against | [Logistic regression](ALG-02-逻辑回归(Logistic-Regression).md) (in Chinese) |
 
 <a id="order"></a>
 
 ## Study order
 
-ALG-01 linear regression is written. The items below are planned and have no files yet, so this page does not link them:
+ALG-01 linear regression and ALG-02 logistic regression are written. The items below are planned and have no files yet, so this page does not link them:
 
-- ALG-02 logistic regression
 - ALG-03 decision tree
 - ALG-04 k-nearest neighbors
 - ALG-05 K-Means
