@@ -1,0 +1,16 @@
+{
+  "publisher": "Immigration Department, HKSAR Government",
+  "licence_note": "Text reproduced for non-commercial use with acknowledgement, as allowed by the Immigration Department copyright notice: https://www.immd.gov.hk/eng/important-notices.html . Copyright remains with the HKSAR Government. Always check the live page before relying on it.",
+  "sources": [
+    {"id": "iang", "url": "https://www.immd.gov.hk/eng/services/visas/IANG.html", "audience": ["student", "employer_hr", "caseworker"]},
+    {"id": "gep", "url": "https://www.immd.gov.hk/eng/services/visas/GEP.html", "audience": ["employer_hr", "caseworker"]},
+    {"id": "asmtp", "url": "https://www.immd.gov.hk/eng/services/visas/ASMTP.html", "audience": ["employer_hr", "caseworker"]},
+    {"id": "techtas", "url": "https://www.immd.gov.hk/eng/services/visas/TECHTAS.html", "audience": ["employer_hr", "caseworker"]},
+    {"id": "ttps", "url": "https://www.immd.gov.hk/eng/services/visas/TTPS.html", "audience": ["employer_hr", "caseworker"]},
+    {"id": "qmas", "url": "https://www.immd.gov.hk/eng/services/visas/quality_migrant_admission_scheme.html", "audience": ["employer_hr", "caseworker"]},
+    {"id": "study", "url": "https://www.immd.gov.hk/eng/services/visas/study.html", "audience": ["student", "caseworker"]},
+    {"id": "dependant", "url": "https://www.immd.gov.hk/eng/services/visas/residence_as_dependant.html", "audience": ["employer_hr", "caseworker"]},
+    {"id": "working_holiday", "url": "https://www.immd.gov.hk/eng/services/visas/working_holiday_scheme.html", "audience": ["student", "caseworker"]},
+    {"id": "visitor_activities", "url": "https://www.immd.gov.hk/eng/services/visas/permissible-activities.html", "audience": ["student", "employer_hr", "caseworker"]}
+  ]
+}

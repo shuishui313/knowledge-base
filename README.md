@@ -4,9 +4,17 @@
 
 **中文** | [English](README.en.md)
 
-[笔记](#sections) · [相关项目](#related)
+[作品](#labs) · [笔记](#sections) · [相关项目](#related)
 
 在线阅读：[Knowledge Base](https://shuishui313.github.io/knowledge-base/)
+
+<a id="labs"></a>
+
+## 作品
+
+| 项目 | 做了什么 | 路径 |
+|------|----------|------|
+| HK Policy RAG | 基于香港政府公开指引的问答服务：混合检索、带引用回答、证据不足时拒答、按角色过滤、评测集和 Docker 部署，附一页 FDE 式的 scope 文档 | [labs/hk-policy-rag](labs/hk-policy-rag/README.zh.md) |
 
 <a id="sections"></a>
 

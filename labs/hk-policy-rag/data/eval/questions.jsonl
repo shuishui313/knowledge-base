@@ -1,0 +1,20 @@
+{"id": "a01", "question": "How many months of stay is a fresh IANG graduate granted at first?", "role": "student", "expected_source": "iang", "answerable": true}
+{"id": "a02", "question": "Within how many months of graduation must a recent graduate apply for IANG?", "role": "student", "expected_source": "iang", "answerable": true}
+{"id": "a03", "question": "Does a recent graduate need a job offer to apply for IANG?", "role": "student", "expected_source": "iang", "answerable": true}
+{"id": "a04", "question": "How long does the Immigration Department take to process a GEP application?", "role": "employer_hr", "expected_source": "gep", "answerable": true}
+{"id": "a05", "question": "What annual income is needed for TTPS Category A?", "role": "employer_hr", "expected_source": "ttps", "answerable": true}
+{"id": "a06", "question": "How many hours per week can non-local students take part-time jobs on campus?", "role": "student", "expected_source": "study", "answerable": true}
+{"id": "a07", "question": "When can non-local students take summer jobs?", "role": "student", "expected_source": "study", "answerable": true}
+{"id": "a08", "question": "What is the minimum age to apply under the Quality Migrant Admission Scheme?", "role": "employer_hr", "expected_source": "qmas", "answerable": true}
+{"id": "a09", "question": "What age range is eligible for the Working Holiday Scheme?", "role": "student", "expected_source": "working_holiday", "answerable": true}
+{"id": "a10", "question": "Which university ranking does TechTAS require for a STEM degree holder?", "role": "employer_hr", "expected_source": "techtas", "answerable": true}
+{"id": "a11", "question": "What is the maximum fine for a visitor who breaches a condition of stay?", "role": "student", "expected_source": "visitor_activities", "answerable": true}
+{"id": "a12", "question": "Can an employer bring in staff from the Mainland under ASMTP?", "role": "employer_hr", "expected_source": "asmtp", "answerable": true}
+{"id": "a13", "question": "Can a dependant of an employment visa holder take up employment in Hong Kong?", "role": "employer_hr", "expected_source": "dependant", "answerable": true}
+{"id": "a14", "question": "How many months of stay is a fresh IANG graduate granted at first?", "role": "caseworker", "expected_source": "iang", "answerable": true}
+{"id": "r01", "question": "What is the statutory minimum wage in Hong Kong?", "role": "student", "expected_source": null, "answerable": false}
+{"id": "r02", "question": "How many days of annual leave does an employee get?", "role": "employer_hr", "expected_source": null, "answerable": false}
+{"id": "r03", "question": "How do I apply for public rental housing?", "role": "student", "expected_source": null, "answerable": false}
+{"id": "r04", "question": "How do I convert my driving licence in Hong Kong?", "role": "caseworker", "expected_source": null, "answerable": false}
+{"id": "r05", "question": "What is the salaries tax rate for 2026?", "role": "employer_hr", "expected_source": null, "answerable": false}
+{"id": "r06", "question": "What university ranking does TechTAS require for a STEM degree holder?", "role": "student", "expected_source": null, "answerable": false}

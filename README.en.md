@@ -4,9 +4,17 @@ Study notes and hands-on projects from my preparation for Forward Deployed Engin
 
 [中文](README.md) | **English**
 
-[Notes](#sections) · [Related](#related)
+[Projects](#labs) · [Notes](#sections) · [Related](#related)
 
 Read online: [Knowledge Base](https://shuishui313.github.io/knowledge-base/)
+
+<a id="labs"></a>
+
+## Projects
+
+| Project | What it does | Path |
+|---------|--------------|------|
+| HK Policy RAG | Q&A over public Hong Kong government guidance: hybrid retrieval, cited answers, refusal when evidence is thin, role-based filtering, an eval set, and a Docker deploy, plus a one-page FDE-style scope doc | [labs/hk-policy-rag](labs/hk-policy-rag/README.md) |
 
 <a id="sections"></a>
 

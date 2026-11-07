@@ -1,0 +1,8 @@
+{
+  "_comment": "Demo roles. Each chunk carries an audience list copied from config/sources.json; a query only searches chunks whose audience contains its role. The split is illustrative, not an ImmD classification.",
+  "roles": {
+    "student": "A non-local student or recent graduate using a university careers-office deployment.",
+    "employer_hr": "An HR officer at a Hong Kong employer hiring non-local staff.",
+    "caseworker": "An internal advisor who can see every document."
+  }
+}
