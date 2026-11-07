@@ -15,6 +15,7 @@
 | AI-01 | 幻觉 | Hallucination | 2026-10-18 | [AI 幻觉（Hallucination）](AI-01-AI幻觉(Hallucination).md) |
 | AI-02 | 检索增强生成 | RAG | 2026-11-05 | [RAG 检索增强生成（RAG）](AI-02-RAG检索增强生成(RAG).md) |
 | AI-03 | 工具调用 | Tool Calling | 2026-11-06 | [工具调用（Tool Calling）](AI-03-工具调用(Tool-Calling).md) |
+| AI-04 | 智能体 | Agent | 2026-11-07 | [智能体（Agent）](AI-04-智能体(Agent).md) |
 
 <a id="conventions"></a>
 
