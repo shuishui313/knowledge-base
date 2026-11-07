@@ -22,13 +22,15 @@
 
 ## FDE 短课
 
-路径：`notes/hk-fde/`。一篇一个文件。文件名从一开始就带编号：`FDE-NN-YYYY-MM-DD-主题简述.md`（`NN` 与 Day 相同，两位数字）。已分配的编号不复用、不重排。
+路径：`notes/hk-fde/`。一课一个文件：`FDE-NN-YYYY-MM-DD-主题简述.md`（`NN` 与 Day 相同，两位数字）。编号不复用、不重排。课程顺序按 [docs/fde-syllabus.md](docs/fde-syllabus.md)。
 
-顺序：场景 → 概念 → 香港落地例子 → 面试怎么说 → 小练习 → 两道自测。自测后用 details 收起参考答案。其中一题要问面试官换成另一类公司时答案怎么变。
+每课的原稿来自每天 9:00 的 FDE 学习推送，入库时只做格式整理：文首元数据行，去掉「回顾」，复述题变成「自测」，补第二题和参考答案。
 
-例子用虚拟、公开可见的场景（银行、仓库、柜面），不写任何机构的内部材料，不编造真实公司的招聘原文。先写香港 FDE 招聘要考的那一层。答案按公司类型分开：虚拟银行/保险、物流、公营柜面、AI 产品或解决方案公司。一种公司写透，其余用一张对照表。公开面经只标明「公开面经里的常见问法」，不编造某家银行或保险公司的原话、候选人故事或逐字题。可以有短的拓展补充。「面试怎么说」大约一分钟：英文口语句，现场用粤语讲清楚，用英文把确认写下来。
+顺序：场景 → 类比 → 原理（解决什么问题、怎么工作、会在哪里坏）→ FDE 视角 → 面试怎么问 → 一句话带走 → 自测两题，答案收在 `<details><summary>参考答案</summary>`。第 2 题换一类雇主（AI 原生 / 产品公司、大厂云与平台、咨询与系统集成、甲方企业内部）再问。
 
-新增后更新 `notes/hk-fde/README.md` 和 `README.en.md`。若接上系列导航，补上一篇文末的「下一篇」。步骤见 [examples/recipes/fde-daily-lesson](examples/recipes/fde-daily-lesson/README.md)。对照：[2026-11-05 对齐范围](notes/hk-fde/FDE-04-2026-11-05-交付沟通-差不多就行时对齐范围.md)。
+例子用虚构的香港场景，不写任何机构的内部材料，不编造面经、公司原话和数字。写法要像人写的：短句、少套话、不重复同一个词。
+
+新增后更新 `notes/hk-fde/README.md` 和 `README.en.md`，并把上一篇文末的「下一篇」接上。步骤见 [examples/recipes/fde-daily-lesson](examples/recipes/fde-daily-lesson/README.md)。
 
 ## 笔记和模板
 
@@ -55,4 +57,4 @@
 
 ## English
 
-The body above is Simplified Chinese. Use separate `README.md` and `README.en.md` files. Switch them with the top-bar links, never with a details widget. FDE lessons go scene, concept, Hong Kong example, 「面试怎么说」, drill, then two quiz questions, with answers inside `<details><summary>参考答案</summary>`. Algorithm notes open with hiring, then applicable and not-applicable scenarios, then the same lesson shape. Glossary notes keep their own headings and still lead with hiring, plus 「面试怎么说」 and exactly two quiz questions. All three lead with Hong Kong FDE hiring and differ by company type (virtual bank or insurer, logistics, public counter, AI product or solutions company): one type in depth, the others in one table. Label public interview patterns 「公开面经里的常见问法」; do not invent a quote, candidate story, or verbatim question from a named bank or insurer. One quiz question switches company type. Do not create or link an unwritten next lesson. Filenames include the serial from the start: `FDE-NN-YYYY-MM-DD-主题简述.md`, `AI-NN-中文名(English).md`, `ALG-NN-中文名(English).md`. Never reuse or renumber an assigned serial. Do not invent links. When the task says to push `main`, fetch `origin main` first and push that branch. When you add a note, lesson, algorithm, or template, update both README indexes. Do not change EveryNews, MediaMgDashboard, or ruflo from this repo. The public site is Knowledge Base at https://shuishui313.github.io/knowledge-base/; do not rewrite notes for the web, do not add a latest-updates module or progress UI, do not animate the hero title on entrance, do not show publish dates in chrome, and leave Day labels and reading time as they are for now; the full interface rules are in skills/knowledge-base/SKILL.md.
+The body above is Simplified Chinese. Use separate `README.md` and `README.en.md` files. Switch them with the top-bar links, never with a details widget. FDE lessons go scenario, analogy, how it works, FDE view, interview question, one-line takeaway, then two quiz questions, with answers inside `<details><summary>参考答案</summary>`; they follow docs/fde-syllabus.md. Algorithm notes open with hiring, then applicable and not-applicable scenarios, then the same lesson shape. Glossary notes keep their own headings and still lead with hiring, plus 「面试怎么说」 and exactly two quiz questions. All three lead with Hong Kong FDE hiring and differ by company type (AI-native product companies, big-tech cloud platforms, consulting and system integrators, in-house teams); use a comparison table only when it helps. Label public interview patterns 「公开面经里的常见问法」; do not invent a quote, candidate story, or verbatim question from a named bank or insurer. One quiz question switches company type. Do not create or link an unwritten next lesson. Filenames include the serial from the start: `FDE-NN-YYYY-MM-DD-主题简述.md`, `AI-NN-中文名(English).md`, `ALG-NN-中文名(English).md`. Never reuse or renumber an assigned serial. Do not invent links. When the task says to push `main`, fetch `origin main` first and push that branch. When you add a note, lesson, algorithm, or template, update both README indexes. Do not change EveryNews, MediaMgDashboard, or ruflo from this repo. The public site is Knowledge Base at https://shuishui313.github.io/knowledge-base/; do not rewrite notes for the web, do not add a latest-updates module or progress UI, do not animate the hero title on entrance, do not show publish dates in chrome, and leave Day labels and reading time as they are for now; the full interface rules are in skills/knowledge-base/SKILL.md.

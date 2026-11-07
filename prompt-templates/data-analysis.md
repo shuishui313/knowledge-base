@@ -57,4 +57,3 @@
 - `{analysis_goal}`：分析目标
 - `{business_context}`：业务背景
 - `{dimension}`：拆解维度（如时间、地区、渠道、用户分层）
-*（内容由AI生成，仅供参考）*

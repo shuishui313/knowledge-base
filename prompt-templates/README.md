@@ -52,7 +52,6 @@
 - 高频且效果稳定的模板，建议沉淀回本目录，并同时更新本文件和 `README.en.md` 的表。步骤见 [prompt-template](../examples/recipes/prompt-template/README.md)
 - 只链接本目录里存在的文件。`email-draft.md` 已删除，不要写回表里
 
-*（内容由AI生成，仅供参考）*
 
 <details>
 <summary>仓库目录</summary>

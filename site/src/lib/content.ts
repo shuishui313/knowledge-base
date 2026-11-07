@@ -68,7 +68,7 @@ const TRACK_META: Record<
     shortName: 'FDE 短课',
     navLabel: '短课',
     dir: 'hk-fde',
-    promise: '招聘要考的内容为主：场景→概念→例子→面试怎么说→练习→自测',
+    promise: '每天一课，按真实 FDE 项目的顺序讲：场景→类比→原理→面试→自测',
   },
   ai: {
     index: '02',
@@ -76,7 +76,7 @@ const TRACK_META: Record<
     shortName: 'AI 科普',
     navLabel: '科普',
     dir: 'ai-glossary',
-    promise: '名词笔记，先写香港 FDE 招聘里怎么考',
+    promise: '常见 AI 名词，讲清原理、坑和面试怎么答',
   },
   algorithms: {
     index: '03',
@@ -84,7 +84,7 @@ const TRACK_META: Record<
     shortName: 'AI 算法',
     navLabel: '算法',
     dir: 'ai-algorithms',
-    promise: '从易到难，先写 FDE 招聘里怎么用这个算法',
+    promise: '从易到难的算法，讲清什么时候用、什么时候别用',
   },
 }
 

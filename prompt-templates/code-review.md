@@ -47,4 +47,3 @@
 
 - `{programming_language}`：代码语言，如 Python、JavaScript、Go
 - `{code_snippet}`：待审查的代码片段
-*（内容由AI生成，仅供参考）*

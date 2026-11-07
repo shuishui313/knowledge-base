@@ -67,4 +67,3 @@
 - `{product_type}`：产品形态
 - `{product_name}`：产品名称
 - `{module_name}`：功能模块名称
-*（内容由AI生成，仅供参考）*

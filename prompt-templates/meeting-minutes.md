@@ -73,4 +73,3 @@
 - `{recorder}`：记录人（可选）
 - `{meeting_goal}`：会议目标（可选）
 - `{agenda_item}`：议题名称
-*（内容由AI生成，仅供参考）*

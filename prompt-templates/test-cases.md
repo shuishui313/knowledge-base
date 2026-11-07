@@ -53,4 +53,3 @@
 - `{module_name}`：功能模块名称
 - `{test_environment}`：测试环境说明
 - `{requirement_doc_link}`：关联的需求文档链接（可选）
-*（内容由AI生成，仅供参考）*

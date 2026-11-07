@@ -63,4 +63,3 @@
 - `{industry}`：所属行业 / 赛道
 - `{analysis_dimensions}`：自定义分析维度（可选）
 - `{our_product}`：我方产品名称
-*（内容由AI生成，仅供参考）*
