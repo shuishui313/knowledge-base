@@ -148,4 +148,4 @@ $$p = \sigma(z) = \frac{1}{1 + e^{-z}}$$
 1. [StatQuest: Logistic Regression](https://www.youtube.com/watch?v=yIYKR4sgzI8) — StatQuest with Josh Starmer 的短解说：逻辑回归和线性回归有什么不同，S 形曲线怎么读。
 2. [Logistic Regression Details Pt1: Coefficients](https://www.youtube.com/watch?v=vN5cNN2-HWE) — 同一作者的续集：系数为什么作用在对数几率上，怎么解释。
 
-上一篇：[线性回归（ALG-01）](ALG-01-线性回归(Linear-Regression).md) · 下一篇预告：决策树（ALG-03）——特征之间有交叉、想要一条条规则时用它。 · [回到索引](README.md)
+上一篇：[线性回归（ALG-01）](ALG-01-线性回归(Linear-Regression).md) · 下一篇：[决策树（ALG-03）](ALG-03-决策树(Decision-Tree).md)——特征之间有交叉、想要一条条规则时用它。 · [回到索引](README.md)
