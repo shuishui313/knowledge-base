@@ -16,6 +16,7 @@
 | AI-02 | 检索增强生成 | RAG | 2026-11-05 | [RAG 检索增强生成（RAG）](AI-02-RAG检索增强生成(RAG).md) |
 | AI-03 | 工具调用 | Tool Calling | 2026-11-06 | [工具调用（Tool Calling）](AI-03-工具调用(Tool-Calling).md) |
 | AI-04 | 智能体 | Agent | 2026-11-07 | [智能体（Agent）](AI-04-智能体(Agent).md) |
+| AI-05 | 评测 | Evaluation | 2026-11-08 | [评测（Evaluation）](AI-05-评测(Evaluation).md) |
 
 <a id="conventions"></a>
 
