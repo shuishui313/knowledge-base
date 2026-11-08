@@ -20,6 +20,7 @@ Each lesson takes 5–8 minutes and explains one idea properly. Examples are fic
 | FDE-04 | 2026-11-05 | 4 | Discovery | Beginner | [Interviewing clients to find the real pain](FDE-04-2026-11-05-需求发现-问出真正的痛点.md) (in Chinese) |
 | FDE-05 | 2026-11-06 | 5 | Discovery | Beginner | [Turning a vague ask into a shippable scope](FDE-05-2026-11-06-需求发现-模糊需求变成scope.md) (in Chinese) |
 | FDE-06 | 2026-11-07 | 6 | Discovery | Beginner | [Prioritising and saying no](FDE-06-2026-11-07-需求发现-优先级与取舍.md) (in Chinese) |
+| FDE-07 | 2026-11-08 | 7 | Discovery | Beginner | [Writing a one-pager the client signs off](FDE-07-2026-11-08-需求发现-写一页纸方案.md) (in Chinese) |
 
 <a id="conventions"></a>
 
