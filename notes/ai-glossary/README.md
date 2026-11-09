@@ -17,6 +17,7 @@
 | AI-03 | 工具调用 | Tool Calling | 2026-11-06 | [工具调用（Tool Calling）](AI-03-工具调用(Tool-Calling).md) |
 | AI-04 | 智能体 | Agent | 2026-11-07 | [智能体（Agent）](AI-04-智能体(Agent).md) |
 | AI-05 | 评测 | Evaluation | 2026-11-08 | [评测（Evaluation）](AI-05-评测(Evaluation).md) |
+| AI-06 | 提示词工程 | Prompt Engineering | 2026-11-09 | [提示词工程（Prompt Engineering）](AI-06-提示词工程(Prompt-Engineering).md) |
 
 <a id="conventions"></a>
 

@@ -17,6 +17,7 @@ Short notes on AI terms and techniques. Each note is written in Simplified Chine
 | AI-03 | Tool calling | Tool Calling | 2026-11-06 | [工具调用（Tool Calling）](AI-03-工具调用(Tool-Calling).md) (in Chinese) |
 | AI-04 | Agent | Agent | 2026-11-07 | [智能体（Agent）](AI-04-智能体(Agent).md) (in Chinese) |
 | AI-05 | Evaluation | Evaluation | 2026-11-08 | [评测（Evaluation）](AI-05-评测(Evaluation).md) (in Chinese) |
+| AI-06 | Prompt engineering | Prompt Engineering | 2026-11-09 | [提示词工程（Prompt Engineering）](AI-06-提示词工程(Prompt-Engineering).md) (in Chinese) |
 
 <a id="conventions"></a>
 
