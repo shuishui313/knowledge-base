@@ -22,6 +22,7 @@ Each lesson takes 5–8 minutes and explains one idea properly. Examples are fic
 | FDE-06 | 2026-11-07 | 6 | Discovery | Beginner | [Prioritising and saying no](FDE-06-2026-11-07-需求发现-优先级与取舍.md) (in Chinese) |
 | FDE-07 | 2026-11-08 | 7 | Discovery | Beginner | [Writing a one-pager the client signs off](FDE-07-2026-11-08-需求发现-写一页纸方案.md) (in Chinese) |
 | FDE-08 | 2026-11-09 | 8 | Discovery | Intermediate | [Demo and workshop: explaining tradeoffs to non-technical people](FDE-08-2026-11-09-需求发现-Demo与workshop.md) (in Chinese) |
+| FDE-09 | 2026-11-10 | 9 | Integration | Intro | [REST API design and calls: status codes, pagination, rate limits](FDE-09-2026-11-10-集成-REST-API状态码分页限流.md) (in Chinese) |
 
 <a id="conventions"></a>
 
