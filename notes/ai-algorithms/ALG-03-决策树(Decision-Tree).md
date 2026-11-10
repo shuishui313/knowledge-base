@@ -162,4 +162,4 @@ $$G = 1 - \sum_{k} p_k^2$$
 1. [Decision and Classification Trees, Clearly Explained!!!](https://www.youtube.com/watch?v=_L39rN6gz7Y) — StatQuest with Josh Starmer 的短解说：树怎样用基尼不纯度挑问题。
 2. [Decision Tree Classification Clearly Explained!](https://www.youtube.com/watch?v=ZVR2Way4nwQ) — Normalized Nerd 的短课：用图一步步看树怎样切分数据。
 
-上一篇：[逻辑回归（ALG-02）](ALG-02-逻辑回归(Logistic-Regression).md) · 下一篇预告：K 近邻（ALG-04）——不训练规则，直接找最像的几个历史案例来判断。 · [回到索引](README.md)
+上一篇：[逻辑回归（ALG-02）](ALG-02-逻辑回归(Logistic-Regression).md) · 下一篇：[K 近邻（ALG-04）](ALG-04-K近邻(K-Nearest-Neighbors).md)——不训练规则，直接找最像的几个历史案例来判断。 · [回到索引](README.md)
