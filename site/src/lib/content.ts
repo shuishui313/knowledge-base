@@ -281,6 +281,7 @@ const CURATED_RELATED: Record<string, string[]> = {
   'ALG-02': ['ALG-01', 'FDE-01'],
   'ALG-03': ['ALG-02', 'ALG-01'],
   'ALG-04': ['ALG-03', 'ALG-02'],
+  'ALG-05': ['ALG-04', 'ALG-03'],
 }
 
 const topicHits = new Map<string, string[]>()

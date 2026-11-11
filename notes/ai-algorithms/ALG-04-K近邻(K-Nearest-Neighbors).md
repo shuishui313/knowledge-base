@@ -133,4 +133,4 @@ $$d(x, y) = \sqrt{\sum_{i=1}^{n} (x_i - y_i)^2}$$
 
 1. [StatQuest: K-nearest neighbors, Clearly Explained](https://www.youtube.com/watch?v=HVXime0nQeI) — StatQuest with Josh Starmer 的短解说：KNN 怎样找近邻、怎样投票、K 怎么选。
 
-上一篇：[决策树（ALG-03）](ALG-03-决策树(Decision-Tree).md) · 下一篇预告：K-Means（ALG-05）——没有标签，让数据自己分成几群。 · [回到索引](README.md)
+上一篇：[决策树（ALG-03）](ALG-03-决策树(Decision-Tree).md) · 下一篇：[K-Means（ALG-05）](ALG-05-K-Means(K-Means).md)——没有标签，让数据自己分成几群。 · [回到索引](README.md)
