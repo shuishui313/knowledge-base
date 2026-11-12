@@ -19,19 +19,20 @@ Lesson bodies are in Simplified Chinese. This page is the bilingual index. Examp
 | ALG-03 | Classification / regression | Beginner | Medium: asked as explainable rules and the base of tree models; hand-computing Gini is rare in FDE write-ups | Route cases through a few conditions (send a claim to a reviewer, which condition combinations go wrong). In-house bank or insurer: auditable rules. Consulting firm: compare with the client's existing rules engine | [Decision tree](ALG-03-决策树(Decision-Tree).md) (in Chinese) |
 | ALG-04 | Classification / regression | Beginner | Medium-low: asked as a baseline and as the idea behind similar-case lookup; hand-coding it is rare in FDE write-ups | Judge a case by its most similar past cases (similar claims, similar complaints). In-house bank or insurer: show reviewers similar past cases. AI product company: baseline and its link to vector search | [K-nearest neighbors](ALG-04-K近邻(K-Nearest-Neighbors).md) (in Chinese) |
 | ALG-05 | Clustering (unsupervised) | Beginner | Medium: asked how to group unlabeled data and how to pick K; hand-coding the loop is rare in FDE write-ups | Group users or cases when there are no labels (customer segments, delivery-stop types). In-house bank or insurer: name the groups with the business. Consulting: do the groups mean anything | [K-Means](ALG-05-K-Means(K-Means).md) (in Chinese) |
+| ALG-06 | Classification / regression (ensemble) | Beginner to intermediate | Medium-high: a common strong baseline on tabular data, asked why it beats one tree; hand-coding it is rare in FDE write-ups | A strong low-tuning baseline on tabular data (claim-review score, delay prediction). In-house bank or insurer: performance plus an explainable comparison. AI product company: a baseline in minutes | [Random forest](ALG-06-随机森林(Random-Forest).md) (in Chinese) |
 
 <a id="order"></a>
 
 ## Study order
 
-ALG-01 linear regression, ALG-02 logistic regression, ALG-03 decision tree, ALG-04 k-nearest neighbors, and ALG-05 K-Means are written. The items below are planned and have no files yet, so this page does not link them:
+ALG-01 linear regression, ALG-02 logistic regression, ALG-03 decision tree, ALG-04 k-nearest neighbors, ALG-05 K-Means, and ALG-06 random forest are written. The items below are planned and have no files yet, so this page does not link them:
 
-- ALG-06 random forest
 - ALG-07 gradient boosting / XGBoost
 - ALG-08 naive Bayes
-- Then: SVM, PCA, neural networks and backpropagation, overfitting and regularization, CNN, attention / Transformer
+- ALG-09 SVM
+- Then: PCA, neural networks and backpropagation, overfitting and regularization, CNN, attention / Transformer
 
-Serials after ALG-08 are assigned when those notes are written, in lesson order. An assigned serial is not reused or renumbered.
+Serials after ALG-09 are assigned when those notes are written, in lesson order. An assigned serial is not reused or renumbered.
 
 <a id="conventions"></a>
 

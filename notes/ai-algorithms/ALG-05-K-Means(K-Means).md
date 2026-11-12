@@ -141,4 +141,4 @@ $$\sum_{k=1}^{K} \sum_{x \in C_k} \lVert x - \mu_k \rVert^2$$
 
 1. [StatQuest: K-means clustering](https://www.youtube.com/watch?v=4b5d3muPQmA) — StatQuest with Josh Starmer 的短解说：怎样分配、更新中心，以及怎么选 K。
 
-上一篇：[K 近邻（ALG-04）](ALG-04-K近邻(K-Nearest-Neighbors).md) · 下一篇预告：随机森林（ALG-06）——很多棵树一起投票，比一棵更稳。 · [回到索引](README.md)
+上一篇：[K 近邻（ALG-04）](ALG-04-K近邻(K-Nearest-Neighbors).md) · 下一篇：[随机森林（ALG-06）](ALG-06-随机森林(Random-Forest).md)——很多棵树一起投票，比一棵更稳。 · [回到索引](README.md)
