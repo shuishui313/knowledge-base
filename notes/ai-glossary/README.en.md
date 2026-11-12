@@ -20,6 +20,7 @@ Short notes on AI terms and techniques. Each note is written in Simplified Chine
 | AI-06 | Prompt engineering | Prompt Engineering | 2026-11-09 | [提示词工程（Prompt Engineering）](AI-06-提示词工程(Prompt-Engineering).md) (in Chinese) |
 | AI-07 | Fine-tuning | Fine-Tuning | 2026-11-10 | [微调（Fine-Tuning）](AI-07-微调(Fine-Tuning).md) (in Chinese) |
 | AI-08 | Embeddings and vector search | Embedding | 2026-11-11 | [嵌入与向量检索（Embedding）](AI-08-嵌入与向量检索(Embedding).md) (in Chinese) |
+| AI-09 | Prompt injection | Prompt Injection | 2026-11-12 | [提示注入（Prompt Injection）](AI-09-提示注入(Prompt-Injection).md) (in Chinese) |
 
 <a id="conventions"></a>
 
