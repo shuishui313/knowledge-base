@@ -24,6 +24,7 @@ Each lesson takes 5–8 minutes and explains one idea properly. Examples are fic
 | FDE-08 | 2026-11-09 | 8 | Discovery | Intermediate | [Demo and workshop: explaining tradeoffs to non-technical people](FDE-08-2026-11-09-需求发现-Demo与workshop.md) (in Chinese) |
 | FDE-09 | 2026-11-10 | 9 | Integration | Intro | [REST API design and calls: status codes, pagination, rate limits](FDE-09-2026-11-10-集成-REST-API状态码分页限流.md) (in Chinese) |
 | FDE-10 | 2026-11-11 | 10 | Integration | Intro to intermediate | [Webhooks: push vs pull, signature verification, replay](FDE-10-2026-11-11-集成-Webhook推拉签名重放.md) (in Chinese) |
+| FDE-11 | 2026-11-12 | 11 | Integration | Intro to intermediate | [Authentication and authorization: API keys, OAuth 2.0, JWT, SSO/SAML](FDE-11-2026-11-12-集成-认证授权APIKey-OAuth-JWT-SSO.md) (in Chinese) |
 
 <a id="conventions"></a>
 

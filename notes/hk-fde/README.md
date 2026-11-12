@@ -24,6 +24,7 @@
 | FDE-08 | 2026-11-09 | 8 | 需求发现 | 进阶 | [Demo 与 workshop：怎么给非技术人讲技术取舍](FDE-08-2026-11-09-需求发现-Demo与workshop.md) |
 | FDE-09 | 2026-11-10 | 9 | 集成 | 入门 | [REST API 设计与调用：状态码、分页、限流](FDE-09-2026-11-10-集成-REST-API状态码分页限流.md) |
 | FDE-10 | 2026-11-11 | 10 | 集成 | 入门到进阶 | [Webhook：推 vs 拉、签名校验、重放](FDE-10-2026-11-11-集成-Webhook推拉签名重放.md) |
+| FDE-11 | 2026-11-12 | 11 | 集成 | 入门到进阶 | [认证授权：API Key、OAuth 2.0、JWT、SSO/SAML](FDE-11-2026-11-12-集成-认证授权APIKey-OAuth-JWT-SSO.md) |
 
 <a id="conventions"></a>
 
