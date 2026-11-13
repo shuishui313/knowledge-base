@@ -115,4 +115,4 @@ sequenceDiagram
 - [OAuth 2 Explained In Simple Terms](https://www.youtube.com/watch?v=ZV5yTm4pT8g)（ByteByteGo）：用短动画讲清 OAuth 2.0 里几个角色和授权码流程，对应本课的时序图。
 - [Session vs Token Authentication in 100 Seconds](https://www.youtube.com/watch?v=UBUNrFtufWo)（Fireship）：约 100 秒讲会话和令牌（含 JWT）两种登入状态的差别，适合配合小练习看。
 
-系列：上一篇 · [Webhook：推 vs 拉、签名校验、重放](FDE-10-2026-11-11-集成-Webhook推拉签名重放.md) · [回到索引](README.md)
+系列：上一篇 · [Webhook：推 vs 拉、签名校验、重放](FDE-10-2026-11-11-集成-Webhook推拉签名重放.md) · 下一篇 · [幂等、重试、退避：为什么集成一定会失败](FDE-12-2026-11-13-集成-幂等重试退避.md) · [回到索引](README.md)
