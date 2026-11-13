@@ -21,6 +21,7 @@
 | AI-07 | 微调 | Fine-Tuning | 2026-11-10 | [微调（Fine-Tuning）](AI-07-微调(Fine-Tuning).md) |
 | AI-08 | 嵌入与向量检索 | Embedding | 2026-11-11 | [嵌入与向量检索（Embedding）](AI-08-嵌入与向量检索(Embedding).md) |
 | AI-09 | 提示注入 | Prompt Injection | 2026-11-12 | [提示注入（Prompt Injection）](AI-09-提示注入(Prompt-Injection).md) |
+| AI-10 | 上下文工程 | Context Engineering | 2026-11-13 | [上下文工程（Context Engineering）](AI-10-上下文工程(Context-Engineering).md) |
 
 <a id="conventions"></a>
 
