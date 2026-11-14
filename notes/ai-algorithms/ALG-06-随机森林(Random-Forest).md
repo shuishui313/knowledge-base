@@ -136,4 +136,4 @@ $$P = \sum_{k=3}^{5} \binom{5}{k} 0.7^k \, 0.3^{5-k} \approx 0.837$$
 
 1. [StatQuest: Random Forests Part 1](https://www.youtube.com/watch?v=J4Wdy0Wc_xQ) — StatQuest with Josh Starmer 的短解说：怎么建、怎么用、怎么用袋外数据评估。
 
-上一篇：[K-Means（ALG-05）](ALG-05-K-Means(K-Means).md) · 下一篇预告：梯度提升 / XGBoost（ALG-07）——一棵接一棵地改前一棵的错。 · [回到索引](README.md)
+上一篇：[K-Means（ALG-05）](ALG-05-K-Means(K-Means).md) · 下一篇：[梯度提升（ALG-07）](ALG-07-梯度提升(Gradient-Boosting).md) · [回到索引](README.md)
