@@ -22,6 +22,7 @@ Short notes on AI terms and techniques. Each note is written in Simplified Chine
 | AI-08 | Embeddings and vector search | Embedding | 2026-11-11 | [嵌入与向量检索（Embedding）](AI-08-嵌入与向量检索(Embedding).md) (in Chinese) |
 | AI-09 | Prompt injection | Prompt Injection | 2026-11-12 | [提示注入（Prompt Injection）](AI-09-提示注入(Prompt-Injection).md) (in Chinese) |
 | AI-10 | Context engineering | Context Engineering | 2026-11-13 | [上下文工程（Context Engineering）](AI-10-上下文工程(Context-Engineering).md) (in Chinese) |
+| AI-11 | Structured output | Structured Output | 2026-11-14 | [结构化输出（Structured Output）](AI-11-结构化输出(Structured-Output).md) (in Chinese) |
 
 <a id="conventions"></a>
 

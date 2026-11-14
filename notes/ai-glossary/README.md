@@ -22,6 +22,7 @@
 | AI-08 | 嵌入与向量检索 | Embedding | 2026-11-11 | [嵌入与向量检索（Embedding）](AI-08-嵌入与向量检索(Embedding).md) |
 | AI-09 | 提示注入 | Prompt Injection | 2026-11-12 | [提示注入（Prompt Injection）](AI-09-提示注入(Prompt-Injection).md) |
 | AI-10 | 上下文工程 | Context Engineering | 2026-11-13 | [上下文工程（Context Engineering）](AI-10-上下文工程(Context-Engineering).md) |
+| AI-11 | 结构化输出 | Structured Output | 2026-11-14 | [结构化输出（Structured Output）](AI-11-结构化输出(Structured-Output).md) |
 
 <a id="conventions"></a>
 

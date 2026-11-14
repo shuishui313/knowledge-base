@@ -59,7 +59,7 @@
 
 - `required` 写全，`enum` 限定状态取值，`pattern` 限定编号格式；
 - `additionalProperties: false`，不接受模型多塞的字段；
-- 能用 strict 模式（如 OpenAI 的 Structured Outputs）就用，格式错误会少很多。
+- 能用 strict 模式（如 OpenAI 的 Structured Outputs）就用，格式错误会少很多。形状保证到哪一层、值为什么仍可能是编的，见 [结构化输出](AI-11-结构化输出(Structured-Output).md)。
 
 对应的参数定义大致是：
 
