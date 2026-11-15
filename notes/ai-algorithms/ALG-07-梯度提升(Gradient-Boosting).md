@@ -137,4 +137,4 @@ $$F_m(x) = F_{m-1}(x) + \eta \cdot h_m(x)$$
 1. [StatQuest: Gradient Boost Part 1 (of 4): Regression Main Ideas](https://www.youtube.com/watch?v=3CC4N4z3GJc) — StatQuest with Josh Starmer 的短解说：用小例子讲残差怎么一轮轮补。
 2. [StatQuest: XGBoost Part 1 (of 4): Regression](https://www.youtube.com/watch?v=OtD8wVaFm6E) — 同一系列，讲 XGBoost 在这个想法上多了什么。
 
-上一篇：[随机森林（ALG-06）](ALG-06-随机森林(Random-Forest).md) · 下一篇预告：朴素贝叶斯（ALG-08）——用「各个线索一起指向哪一类」来判断。 · [回到索引](README.md)
+上一篇：[随机森林（ALG-06）](ALG-06-随机森林(Random-Forest).md) · 下一篇：[朴素贝叶斯（ALG-08）](ALG-08-朴素贝叶斯(Naive-Bayes).md) · [回到索引](README.md)
