@@ -40,7 +40,7 @@
 - 独立的查询可以在一次回复里并行发出，省来回，但写操作并行前必须有幂等保护。
 - 轮数要设上限。到上限就停下，说明还没拿到结果，不让模型自由发挥一段像结论的话。
 
-接口形态上，OpenAI 2023 年在对话接口里推出 function calling，后来统一成 tools；Anthropic 的 Messages API 有 tool use。各家都用 JSON Schema 描述参数。Anthropic 2024 年底发布的 MCP（Model Context Protocol）把「怎么把工具暴露给模型」做成了开放协议。协议换了，下面这些工程规则不变。
+接口形态上，OpenAI 2023 年在对话接口里推出 function calling，后来统一成 tools；Anthropic 的 Messages API 有 tool use。各家都用 JSON Schema 描述参数。Anthropic 2024 年底发布的 [MCP](AI-12-模型上下文协议(MCP).md)（Model Context Protocol）把工具、资源和提示接给宿主应用的方式做成了开放协议。协议换了，下面这些工程规则不变。
 
 ## 工具定义：描述和 Schema
 
@@ -199,6 +199,8 @@
 ## 一句话总结
 
 > **工具调用让模型先查或先算再开口，它不会让模型记住一切。** 把模型当不可信客户端：收紧 Schema，服务端校验，最小权限，写入要幂等，失败要露出来。
+
+这些规则不因接入方式改变。用 MCP 把工具接到宿主上时，协议本身不替你做校验和确认，见 [模型上下文协议](AI-12-模型上下文协议(MCP).md)。
 
 ## 延伸观看
 
