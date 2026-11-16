@@ -130,4 +130,4 @@ $$P(x_1,x_2\mid\text{类}) \approx P(x_1\mid\text{类})\,P(x_2\mid\text{类})$$
 
 1. [StatQuest: Naive Bayes, Clearly Explained!!!](https://www.youtube.com/watch?v=O2L2Uv9pdDA) — StatQuest with Josh Starmer 的短解说：用小例子讲先验、似然怎么乘。
 
-上一篇：[梯度提升（ALG-07）](ALG-07-梯度提升(Gradient-Boosting).md) · 下一篇预告：SVM（ALG-09）——找一条把两类分得最开的边界。 · [回到索引](README.md)
+上一篇：[梯度提升（ALG-07）](ALG-07-梯度提升(Gradient-Boosting).md) · 下一篇：[支持向量机（ALG-09）](ALG-09-支持向量机(SVM).md) · [回到索引](README.md)
