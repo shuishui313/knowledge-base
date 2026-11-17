@@ -128,4 +128,4 @@ C 大：越界代价高，边界贴着训练数据，路变窄，容易过拟合
 1. [Support Vector Machines Part 1 (of 3): Main Ideas!!!](https://www.youtube.com/watch?v=efR1C6CvhmE) — StatQuest with Josh Starmer：从一维阈值讲到间隔、软间隔和核函数。
 2. [Support Vector Machine (SVM) in 2 minutes](https://www.youtube.com/watch?v=_YPScrckx28) — Visually Explained：两分钟动画，先建立直觉。
 
-上一篇：[朴素贝叶斯（ALG-08）](ALG-08-朴素贝叶斯(Naive-Bayes).md) · 下一篇预告：PCA（ALG-10）——把很多特征压成少数几个主要方向。 · [回到索引](README.md)
+上一篇：[朴素贝叶斯（ALG-08）](ALG-08-朴素贝叶斯(Naive-Bayes).md) · 下一篇：[主成分分析（ALG-10）](ALG-10-主成分分析(PCA).md) · [回到索引](README.md)
