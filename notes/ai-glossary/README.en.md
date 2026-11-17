@@ -24,6 +24,7 @@ Short notes on AI terms and techniques. Each note is written in Simplified Chine
 | AI-10 | Context engineering | Context Engineering | 2026-11-13 | [上下文工程（Context Engineering）](AI-10-上下文工程(Context-Engineering).md) (in Chinese) |
 | AI-11 | Structured output | Structured Output | 2026-11-14 | [结构化输出（Structured Output）](AI-11-结构化输出(Structured-Output).md) (in Chinese) |
 | AI-12 | Model Context Protocol | MCP | 2026-11-16 | [模型上下文协议（MCP）](AI-12-模型上下文协议(MCP).md) (in Chinese) |
+| AI-13 | Reasoning models | Reasoning Models | 2026-11-17 | [推理模型（Reasoning Models）](AI-13-推理模型(Reasoning-Models).md) (in Chinese) |
 
 <a id="conventions"></a>
 
