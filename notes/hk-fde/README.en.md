@@ -29,6 +29,7 @@ Each lesson takes 5–8 minutes and explains one idea properly. Examples are fic
 | FDE-13 | 2026-11-14 | 13 | Integration | Intro to intermediate | [Data formats and transformation: JSON/CSV/XML, schema validation, dirty data](FDE-13-2026-11-14-集成-数据格式与转换.md) (in Chinese) |
 | FDE-14 | 2026-11-16 | 14 | Integration | Intro to intermediate | [SQL in practice: JOINs, window functions, answering questions from client data](FDE-14-2026-11-16-集成-SQL实战JOIN窗口函数.md) (in Chinese) |
 | FDE-15 | 2026-11-17 | 15 | Integration | Intro to intermediate | [ETL and data pipelines: batch vs stream, incremental sync](FDE-15-2026-11-17-集成-ETL数据管道批流增量同步.md) (in Chinese) |
+| FDE-16 | 2026-11-18 | 16 | Integration | Intro to intermediate | [Integrating with CRM, ERP and internal systems — and what to do when there is no API](FDE-16-2026-11-18-集成-企业系统对接CRM-ERP无API.md) (in Chinese) |
 
 <a id="conventions"></a>
 
