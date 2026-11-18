@@ -25,6 +25,7 @@
 | AI-11 | 结构化输出 | Structured Output | 2026-11-14 | [结构化输出（Structured Output）](AI-11-结构化输出(Structured-Output).md) |
 | AI-12 | 模型上下文协议 | MCP | 2026-11-16 | [模型上下文协议（MCP）](AI-12-模型上下文协议(MCP).md) |
 | AI-13 | 推理模型 | Reasoning Models | 2026-11-17 | [推理模型（Reasoning Models）](AI-13-推理模型(Reasoning-Models).md) |
+| AI-14 | 护栏 | Guardrails | 2026-11-18 | [护栏（Guardrails）](AI-14-护栏(Guardrails).md) |
 
 <a id="conventions"></a>
 
