@@ -24,15 +24,15 @@ Lesson bodies are in Simplified Chinese. This page is the bilingual index. Examp
 | ALG-08 | Classification | Intro | Medium: a common fast baseline for text classification, asked why it is called naive; hand-deriving Bayes' rule is rare in FDE write-ups | Classify text tickets, complaints and emails with little data. In-house bank or insurer: triage plus probability calibration. AI product company: a text baseline in minutes | [Naive Bayes](ALG-08-朴素贝叶斯(Naive-Bayes).md) (in Chinese) |
 | ALG-09 | Classification | Intermediate | Medium-low: basic ML rounds ask about the margin, kernels and C; it shows up less in FDE write-ups, and deriving the dual form is rarer | Binary classification with a moderate amount of data and many features (send a claim to a reviewer or not). In-house bank or insurer: standardization and score calibration when taking over an old model. AI product company: compare with logistic regression and gradient boosting | [Support vector machine (SVM)](ALG-09-支持向量机(SVM).md) (in Chinese) |
 | ALG-10 | Dimensionality reduction | Intermediate | Medium: basic rounds ask what PCA keeps and how to pick the number of components; in FDE write-ups it is usually a passing mention, and deriving the eigendecomposition is rare | Compress many correlated numeric features before clustering or modeling, or plot in 2D. In-house bank or insurer: a loadings table and before/after metrics. AI product company: a preprocessing step compared against the uncompressed baseline | [Principal component analysis (PCA)](ALG-10-主成分分析(PCA).md) (in Chinese) |
+| ALG-11 | Classification / regression (neural networks) | Intermediate | Medium-high: basic rounds ask what backpropagation computes and why the chain rule; in FDE write-ups explaining the idea is enough, hand-deriving multi-layer gradients is rare | Text or images where rules cannot be written and labeled data is enough. In-house bank or insurer: compare with a simple baseline, keep reproducible records. AI product company: fine-tune a pretrained model and watch validation loss | [Neural networks and backpropagation](ALG-11-神经网络与反向传播(Neural-Networks-and-Backpropagation).md) (in Chinese) |
 
 <a id="order"></a>
 
 ## Study order
 
-ALG-01 linear regression, ALG-02 logistic regression, ALG-03 decision tree, ALG-04 k-nearest neighbors, ALG-05 K-Means, ALG-06 random forest, ALG-07 gradient boosting, ALG-08 naive Bayes, ALG-09 support vector machine, and ALG-10 principal component analysis are written. The items below are planned and have no files yet, so this page does not link them:
+ALG-01 linear regression, ALG-02 logistic regression, ALG-03 decision tree, ALG-04 k-nearest neighbors, ALG-05 K-Means, ALG-06 random forest, ALG-07 gradient boosting, ALG-08 naive Bayes, ALG-09 support vector machine, ALG-10 principal component analysis, and ALG-11 neural networks and backpropagation are written. The items below are planned and have no files yet, so this page does not link them:
 
-- ALG-11 neural networks and backpropagation
-- Then: overfitting and regularization, CNN, attention / Transformer
+- Overfitting and regularization, CNN, attention / Transformer
 
 Serials after ALG-11 are assigned when those notes are written, in lesson order. An assigned serial is not reused or renumbered.
 

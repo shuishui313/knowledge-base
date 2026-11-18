@@ -128,4 +128,4 @@ $$\Sigma = \begin{pmatrix} 1 & 0.8 \\ 0.8 & 1 \end{pmatrix}$$
 1. [StatQuest: PCA main ideas in only 5 minutes!!!](https://www.youtube.com/watch?v=HMOI_lkzW08) — StatQuest with Josh Starmer：五分钟讲清主成分在找什么。
 2. [StatQuest: Principal Component Analysis (PCA), Step-by-Step](https://www.youtube.com/watch?v=FgakZw6K1QQ) — StatQuest with Josh Starmer：一步步讲怎么算、怎么选几个主成分。
 
-上一篇：[支持向量机（ALG-09）](ALG-09-支持向量机(SVM).md) · 下一篇预告：神经网络与反向传播（ALG-11）——让误差一层层往回告诉每个权重该怎么改。 · [回到索引](README.md)
+上一篇：[支持向量机（ALG-09）](ALG-09-支持向量机(SVM).md) · 下一篇：[神经网络与反向传播（ALG-11）](ALG-11-神经网络与反向传播(Neural-Networks-and-Backpropagation).md) · [回到索引](README.md)
