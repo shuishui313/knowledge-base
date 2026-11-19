@@ -136,4 +136,4 @@ $$w \leftarrow w - \eta \, \frac{\partial L}{\partial w}$$
 1. [StatQuest: Neural Networks Pt. 2: Backpropagation Main Ideas](https://www.youtube.com/watch?v=IN2XmBhILt4) — StatQuest with Josh Starmer：用小例子讲清反向传播在做什么。
 2. [StatQuest: The Essential Main Ideas of Neural Networks](https://www.youtube.com/watch?v=CqOfi41LfDw) — StatQuest with Josh Starmer：先看清神经网络前向在做什么。
 
-上一篇：[主成分分析（ALG-10）](ALG-10-主成分分析(PCA).md) · 下一篇预告：过拟合与正则化——为什么训练得越好，不一定越能用。 · [回到索引](README.md)
+上一篇：[主成分分析（ALG-10）](ALG-10-主成分分析(PCA).md) · 下一篇：[过拟合与正则化（ALG-12）](ALG-12-过拟合与正则化(Overfitting-and-Regularization).md) · [回到索引](README.md)
