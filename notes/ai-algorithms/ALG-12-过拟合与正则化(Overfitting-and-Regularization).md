@@ -119,4 +119,4 @@ L2 惩罚权重平方，把权重整体压小，很少压到零，适合特征�
 1. [StatQuest: Regularization Part 1: Ridge (L2) Regression](https://www.youtube.com/watch?v=Q81RR3yKn30) — StatQuest with Josh Starmer：用小例子讲清 L2 为什么能减少过拟合。
 2. [StatQuest: Regularization Part 2: Lasso (L1) Regression](https://www.youtube.com/watch?v=NGf0voTMlcs) — StatQuest with Josh Starmer：看 L1 为什么能把权重压到零。
 
-上一篇：[神经网络与反向传播（ALG-11）](ALG-11-神经网络与反向传播(Neural-Networks-and-Backpropagation).md) · 下一篇预告：CNN——让网络用同一个小窗口扫过整张图。 · [回到索引](README.md)
+上一篇：[神经网络与反向传播（ALG-11）](ALG-11-神经网络与反向传播(Neural-Networks-and-Backpropagation).md) · 下一篇：[卷积神经网络（ALG-13）](ALG-13-卷积神经网络(CNN).md) · [回到索引](README.md)
