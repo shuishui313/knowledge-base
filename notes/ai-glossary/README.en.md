@@ -27,6 +27,7 @@ Short notes on AI terms and techniques. Each note is written in Simplified Chine
 | AI-13 | Reasoning models | Reasoning Models | 2026-11-17 | [推理模型（Reasoning Models）](AI-13-推理模型(Reasoning-Models).md) (in Chinese) |
 | AI-14 | Guardrails | Guardrails | 2026-11-18 | [护栏（Guardrails）](AI-14-护栏(Guardrails).md) (in Chinese) |
 | AI-15 | Human-in-the-loop | Human-in-the-Loop | 2026-11-19 | [人工在环（Human-in-the-Loop）](AI-15-人工在环(Human-in-the-Loop).md) (in Chinese) |
+| AI-16 | Observability | Observability | 2026-11-20 | [可观测性（Observability）](AI-16-可观测性(Observability).md) (in Chinese) |
 
 <a id="conventions"></a>
 

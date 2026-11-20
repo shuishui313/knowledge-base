@@ -27,6 +27,7 @@
 | AI-13 | 推理模型 | Reasoning Models | 2026-11-17 | [推理模型（Reasoning Models）](AI-13-推理模型(Reasoning-Models).md) |
 | AI-14 | 护栏 | Guardrails | 2026-11-18 | [护栏（Guardrails）](AI-14-护栏(Guardrails).md) |
 | AI-15 | 人工在环 | Human-in-the-Loop | 2026-11-19 | [人工在环（Human-in-the-Loop）](AI-15-人工在环(Human-in-the-Loop).md) |
+| AI-16 | 可观测性 | Observability | 2026-11-20 | [可观测性（Observability）](AI-16-可观测性(Observability).md) |
 
 <a id="conventions"></a>
 
