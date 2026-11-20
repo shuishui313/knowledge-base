@@ -101,4 +101,4 @@ flowchart TD
 ## 延伸观看
 - [Why AI Tokens are so Expensive](https://www.youtube.com/watch?v=-0HRzXk8vlk)（Computerphile）：从「token 是什么」讲到为何按 token 计费会迅速变贵，适合和本课的成本、窗口约束一起看。
 
-系列：上一篇 · [企业系统对接：CRM、ERP、内部系统，以及「没有 API 怎么办」](FDE-16-2026-11-18-集成-企业系统对接CRM-ERP无API.md) · [回到索引](README.md)
+系列：上一篇 · [企业系统对接：CRM、ERP、内部系统，以及「没有 API 怎么办」](FDE-16-2026-11-18-集成-企业系统对接CRM-ERP无API.md) · 下一篇 · [Prompt 工程：结构化输出、few-shot、系统提示](FDE-18-2026-11-20-LLM应用-Prompt工程结构化输出few-shot系统提示.md) · [回到索引](README.md)
