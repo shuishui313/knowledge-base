@@ -116,4 +116,4 @@ flowchart TD
 ## 延伸观看
 - [Prompting 101 | Code w/ Claude](https://www.youtube.com/watch?v=ysPbXH0LpIE)（Anthropic Applied AI）：用真实任务把一版含糊的提示词迭代到可用规格，覆盖说明、例子和输出格式，适合和本课一起看。
 
-系列：上一篇 · [LLM 基础：token、上下文窗口、温度、成本与延迟](FDE-17-2026-11-19-LLM应用-LLM基础token上下文窗口温度成本延迟.md) · [回到索引](README.md)
+系列：上一篇 · [LLM 基础：token、上下文窗口、温度、成本与延迟](FDE-17-2026-11-19-LLM应用-LLM基础token上下文窗口温度成本延迟.md) · 下一篇 · [Embedding 与向量检索：原理与选型](FDE-19-2026-11-21-LLM应用-Embedding与向量检索原理与选型.md) · [回到索引](README.md)
