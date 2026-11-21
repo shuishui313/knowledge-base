@@ -27,16 +27,15 @@ Lesson bodies are in Simplified Chinese. This page is the bilingual index. Examp
 | ALG-11 | Classification / regression (neural networks) | Intermediate | Medium-high: basic rounds ask what backpropagation computes and why the chain rule; in FDE write-ups explaining the idea is enough, hand-deriving multi-layer gradients is rare | Text or images where rules cannot be written and labeled data is enough. In-house bank or insurer: compare with a simple baseline, keep reproducible records. AI product company: fine-tune a pretrained model and watch validation loss | [Neural networks and backpropagation](ALG-11-神经网络与反向传播(Neural-Networks-and-Backpropagation).md) (in Chinese) |
 | ALG-12 | Model training / generalization (general method) | Intermediate | High: basic rounds almost always ask what overfitting is, how to spot it and how to reduce it; in FDE write-ups explaining validation and regularization is enough, derivations are rare | Training metrics look great but validation is poor; many correlated features. In-house bank or insurer: time-based validation, L1/L2 for stability. AI product company: early stopping and regression tests | [Overfitting and regularization](ALG-12-过拟合与正则化(Overfitting-and-Regularization).md) (in Chinese) |
 | ALG-13 | Classification / regression (neural network, images) | Intermediate | Medium: basic rounds often ask about convolution, pooling and why CNNs beat fully connected nets on images; hand-deriving shapes is rare in FDE write-ups | Image inputs (parcel photos, IDs, forms) where position varies but shapes repeat. In-house bank: personal-data compliance and human review. AI product company: pretrained fine-tuning and an evaluation set | [Convolutional neural networks (CNN)](ALG-13-卷积神经网络(CNN).md) (in Chinese) |
+| ALG-14 | Neural network (sequences, foundation of LLMs) | Upper intermediate | High: FDE roles touch LLMs daily, so expect what attention does and why long text is costly; hand-deriving multi-head attention is rare | Long-document Q&A, context window and token cost. In-house bank/insurer: data stays in, cite sources, human review. AI product company: latency and cost | [Attention and Transformer](ALG-14-注意力与Transformer(Attention-and-Transformer).md) (in Chinese) |
 
 <a id="order"></a>
 
 ## Study order
 
-ALG-01 linear regression, ALG-02 logistic regression, ALG-03 decision tree, ALG-04 k-nearest neighbors, ALG-05 K-Means, ALG-06 random forest, ALG-07 gradient boosting, ALG-08 naive Bayes, ALG-09 support vector machine, ALG-10 principal component analysis, ALG-11 neural networks and backpropagation, ALG-12 overfitting and regularization, and ALG-13 convolutional neural networks are written. The items below are planned and have no files yet, so this page does not link them:
+ALG-01 linear regression, ALG-02 logistic regression, ALG-03 decision tree, ALG-04 k-nearest neighbors, ALG-05 K-Means, ALG-06 random forest, ALG-07 gradient boosting, ALG-08 naive Bayes, ALG-09 support vector machine, ALG-10 principal component analysis, ALG-11 neural networks and backpropagation, ALG-12 overfitting and regularization, ALG-13 convolutional neural networks, and ALG-14 attention and Transformer are written. The planned list is complete; next topics are decided together.
 
-- Attention / Transformer
-
-Serials after ALG-13 are assigned when those notes are written, in lesson order. An assigned serial is not reused or renumbered.
+Serials after ALG-14 are assigned when those notes are written, in lesson order. An assigned serial is not reused or renumbered.
 
 <a id="conventions"></a>
 

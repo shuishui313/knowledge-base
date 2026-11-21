@@ -115,4 +115,4 @@ $$\text{out}(i,j) = \sum_{u}\sum_{v} K(u,v)\,\cdot\,x(i+u,\,j+v)$$
 
 1. [StatQuest: Neural Networks Part 8: Image Classification with Convolutional Neural Networks (CNNs)](https://www.youtube.com/watch?v=HGwBXDKFk9I) — StatQuest with Josh Starmer：用 6×6 的小图例子讲清滤波器和池化。
 
-上一篇：[过拟合与正则化（ALG-12）](ALG-12-过拟合与正则化(Overfitting-and-Regularization).md) · 下一篇预告：Attention / Transformer——让每个词直接去看和它相关的其他词。 · [回到索引](README.md)
+上一篇：[过拟合与正则化（ALG-12）](ALG-12-过拟合与正则化(Overfitting-and-Regularization).md) · 下一篇：[注意力与 Transformer（ALG-14）](ALG-14-注意力与Transformer(Attention-and-Transformer).md) · [回到索引](README.md)
