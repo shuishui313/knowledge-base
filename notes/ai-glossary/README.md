@@ -28,6 +28,7 @@
 | AI-14 | 护栏 | Guardrails | 2026-11-18 | [护栏（Guardrails）](AI-14-护栏(Guardrails).md) |
 | AI-15 | 人工在环 | Human-in-the-Loop | 2026-11-19 | [人工在环（Human-in-the-Loop）](AI-15-人工在环(Human-in-the-Loop).md) |
 | AI-16 | 可观测性 | Observability | 2026-11-20 | [可观测性（Observability）](AI-16-可观测性(Observability).md) |
+| AI-17 | 权限感知检索 | Permission-aware Retrieval | 2026-11-21 | [权限感知检索（Permission-aware Retrieval）](AI-17-权限感知检索(Permission-aware-Retrieval).md) |
 
 <a id="conventions"></a>
 
