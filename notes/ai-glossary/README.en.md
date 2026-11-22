@@ -29,6 +29,7 @@ Short notes on AI terms and techniques. Each note is written in Simplified Chine
 | AI-15 | Human-in-the-loop | Human-in-the-Loop | 2026-11-19 | [人工在环（Human-in-the-Loop）](AI-15-人工在环(Human-in-the-Loop).md) (in Chinese) |
 | AI-16 | Observability | Observability | 2026-11-20 | [可观测性（Observability）](AI-16-可观测性(Observability).md) (in Chinese) |
 | AI-17 | Permission-aware retrieval | Permission-aware Retrieval | 2026-11-21 | [权限感知检索（Permission-aware Retrieval）](AI-17-权限感知检索(Permission-aware-Retrieval).md) (in Chinese) |
+| AI-18 | Semantic caching | Semantic Caching | 2026-11-22 | [语义缓存（Semantic Caching）](AI-18-语义缓存(Semantic-Caching).md) (in Chinese) |
 
 <a id="conventions"></a>
 
