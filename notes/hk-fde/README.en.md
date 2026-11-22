@@ -33,6 +33,7 @@ Each lesson takes 5–8 minutes and explains one idea properly. Examples are fic
 | FDE-17 | 2026-11-19 | 17 | LLM applications | Beginner | [LLM basics: tokens, context window, temperature, cost and latency](FDE-17-2026-11-19-LLM应用-LLM基础token上下文窗口温度成本延迟.md) (in Chinese) |
 | FDE-18 | 2026-11-20 | 18 | LLM applications | Intro to intermediate | [Prompt engineering: structured output, few-shot, and system prompts](FDE-18-2026-11-20-LLM应用-Prompt工程结构化输出few-shot系统提示.md) (in Chinese) |
 | FDE-19 | 2026-11-21 | 19 | LLM applications | Intro to intermediate | [Embeddings and vector search: how they work and how to choose](FDE-19-2026-11-21-LLM应用-Embedding与向量检索原理与选型.md) (in Chinese) |
+| FDE-20 | 2026-11-22 | 20 | LLM applications | Intro to intermediate | [The RAG pipeline: chunking, retrieval, reranking, and citations](FDE-20-2026-11-22-LLM应用-RAG全流程切块召回重排引用.md) (in Chinese) |
 
 <a id="conventions"></a>
 

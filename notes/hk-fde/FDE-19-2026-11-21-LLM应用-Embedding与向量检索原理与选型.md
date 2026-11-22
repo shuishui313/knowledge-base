@@ -99,4 +99,4 @@ flowchart TD
 - [What is a Vector Database? Powering Semantic Search & AI Applications](https://www.youtube.com/watch?v=gl1r1XV0SLw)（IBM Technology）：从 embedding 讲到相似检索，适合和本课的「找相近片段」一起看。
 - [Word Embedding and Word2Vec, Clearly Explained!!!](https://www.youtube.com/watch?v=viZrOnJclY0)（StatQuest）：把「相近的意思用相近的数字表示」讲清楚；本课用的是整段文本的 embedding，不是一词一向量，但这个直觉是通的。
 
-系列：上一篇 · [Prompt 工程：结构化输出、few-shot、系统提示](FDE-18-2026-11-20-LLM应用-Prompt工程结构化输出few-shot系统提示.md) · [回到索引](README.md)
+系列：上一篇 · [Prompt 工程：结构化输出、few-shot、系统提示](FDE-18-2026-11-20-LLM应用-Prompt工程结构化输出few-shot系统提示.md) · 下一篇 · [RAG 全流程：切块、召回、重排、引用](FDE-20-2026-11-22-LLM应用-RAG全流程切块召回重排引用.md) · [回到索引](README.md)
