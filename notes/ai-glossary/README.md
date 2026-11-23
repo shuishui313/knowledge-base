@@ -30,6 +30,7 @@
 | AI-16 | 可观测性 | Observability | 2026-11-20 | [可观测性（Observability）](AI-16-可观测性(Observability).md) |
 | AI-17 | 权限感知检索 | Permission-aware Retrieval | 2026-11-21 | [权限感知检索（Permission-aware Retrieval）](AI-17-权限感知检索(Permission-aware-Retrieval).md) |
 | AI-18 | 语义缓存 | Semantic Caching | 2026-11-22 | [语义缓存（Semantic Caching）](AI-18-语义缓存(Semantic-Caching).md) |
+| AI-19 | 查询路由 | Query Routing | 2026-11-23 | [查询路由（Query Routing）](AI-19-查询路由(Query-Routing).md) |
 
 <a id="conventions"></a>
 
