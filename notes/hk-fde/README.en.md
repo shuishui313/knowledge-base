@@ -35,6 +35,7 @@ Each lesson takes 5–8 minutes and explains one idea properly. Examples are fic
 | FDE-19 | 2026-11-21 | 19 | LLM applications | Intro to intermediate | [Embeddings and vector search: how they work and how to choose](FDE-19-2026-11-21-LLM应用-Embedding与向量检索原理与选型.md) (in Chinese) |
 | FDE-20 | 2026-11-22 | 20 | LLM applications | Intro to intermediate | [The RAG pipeline: chunking, retrieval, reranking, and citations](FDE-20-2026-11-22-LLM应用-RAG全流程切块召回重排引用.md) (in Chinese) |
 | FDE-21 | 2026-11-23 | 21 | LLM applications | Intro to intermediate | [Why RAG answers go wrong: common failure modes and debugging](FDE-21-2026-11-23-LLM应用-RAG为什么会答错常见失败模式与排查.md) (in Chinese) |
+| FDE-22 | 2026-11-24 | 22 | LLM applications | Intro to intermediate | [Tool calling: the model proposes, the program executes](FDE-22-2026-11-24-LLM应用-工具调用Tool-calling与Function-calling.md) (in Chinese) |
 
 <a id="conventions"></a>
 
