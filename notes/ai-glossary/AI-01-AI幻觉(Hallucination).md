@@ -36,6 +36,8 @@ OpenAI 2025 年的论文 *Why Language Models Hallucinate*（Kalai 等）给了�
 
 上线后，把「无引用回答率」「核对失败率」「用户纠错次数」当成和 5xx 一样的指标盯。
 
+引用角标和生成后核对怎样做成硬条件，见 [引用与溯源（Grounding and Citation）](AI-20-引用与溯源(Grounding-and-Citation).md)。
+
 ## 换一类雇主，重点怎么移
 
 同一句「模型错了怎么办」，四类雇主想听的层次不一样：

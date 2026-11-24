@@ -31,6 +31,7 @@
 | AI-17 | 权限感知检索 | Permission-aware Retrieval | 2026-11-21 | [权限感知检索（Permission-aware Retrieval）](AI-17-权限感知检索(Permission-aware-Retrieval).md) |
 | AI-18 | 语义缓存 | Semantic Caching | 2026-11-22 | [语义缓存（Semantic Caching）](AI-18-语义缓存(Semantic-Caching).md) |
 | AI-19 | 查询路由 | Query Routing | 2026-11-23 | [查询路由（Query Routing）](AI-19-查询路由(Query-Routing).md) |
+| AI-20 | 引用与溯源 | Grounding / Citation | 2026-11-24 | [引用与溯源（Grounding and Citation）](AI-20-引用与溯源(Grounding-and-Citation).md) |
 
 <a id="conventions"></a>
 
