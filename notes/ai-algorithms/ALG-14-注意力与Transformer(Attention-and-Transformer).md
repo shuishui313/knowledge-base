@@ -117,4 +117,4 @@ Query 表示这个词在找什么，Key 表示每个词有什么特征，两者�
 
 1. [StatQuest: Transformer Neural Networks, ChatGPT's foundation, Clearly Explained!!!](https://www.youtube.com/watch?v=zxQyTK8quyY) — StatQuest with Josh Starmer：一步一步讲清 Transformer 怎么处理一句话。
 
-上一篇：[卷积神经网络（ALG-13）](ALG-13-卷积神经网络(CNN).md) · [回到索引](README.md)
+上一篇：[卷积神经网络（ALG-13）](ALG-13-卷积神经网络(CNN).md) · 下一篇：[Embedding 与向量检索（ALG-15）](ALG-15-Embedding与向量检索(Embeddings-and-Vector-Search).md) · [回到索引](README.md)
