@@ -32,6 +32,7 @@
 | AI-18 | 语义缓存 | Semantic Caching | 2026-11-22 | [语义缓存（Semantic Caching）](AI-18-语义缓存(Semantic-Caching).md) |
 | AI-19 | 查询路由 | Query Routing | 2026-11-23 | [查询路由（Query Routing）](AI-19-查询路由(Query-Routing).md) |
 | AI-20 | 引用与溯源 | Grounding / Citation | 2026-11-24 | [引用与溯源（Grounding and Citation）](AI-20-引用与溯源(Grounding-and-Citation).md) |
+| AI-21 | 查询改写 | Query Rewriting | 2026-11-25 | [查询改写（Query Rewriting）](AI-21-查询改写(Query-Rewriting).md) |
 
 <a id="conventions"></a>
 
