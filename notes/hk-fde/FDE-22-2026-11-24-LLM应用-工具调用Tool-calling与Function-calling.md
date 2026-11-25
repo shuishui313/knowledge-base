@@ -134,4 +134,4 @@ Schema 只保证形状（必填、格式、枚举）。合法的 `WO-3184` 仍�
 - [GPT function calling in a nutshell](https://www.youtube.com/watch?v=i-oHvHejdsc)（Henrik Kniberg）：用很短的例子讲清「模型先发出调用请求，你的程序执行后再把结果交回」。
 - [OpenAI Function Calling - Full Beginner Tutorial](https://www.youtube.com/watch?v=aqdWSYWC_LI)（Dave Ebbelaar）：把 function calling 从工具描述、请求到执行走一遍，适合对照本课的循环看。
 
-系列：上一篇 · [RAG 为什么会答错：常见失败模式与排查](FDE-21-2026-11-23-LLM应用-RAG为什么会答错常见失败模式与排查.md) · [回到索引](README.md)
+系列：上一篇 · [RAG 为什么会答错：常见失败模式与排查](FDE-21-2026-11-23-LLM应用-RAG为什么会答错常见失败模式与排查.md) · 下一篇 · [Agent：规划、循环与记忆，以及什么时候不该用](FDE-23-2026-11-25-LLM应用-Agent规划循环记忆与何时不该用.md) · [回到索引](README.md)
