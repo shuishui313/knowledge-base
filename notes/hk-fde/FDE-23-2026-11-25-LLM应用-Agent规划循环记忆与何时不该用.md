@@ -118,4 +118,4 @@ flowchart TD
 ## 延伸观看
 - [How We Build Effective Agents](https://www.youtube.com/watch?v=D7_ipDqhtwk)（Barry Zhang，Anthropic，AI Engineer Summit）：约 15 分钟，核心是「不要什么都做成 Agent」，以及路径能写清时先用 workflow。
 
-系列：上一篇 · [工具调用：让模型提议，由程序执行](FDE-22-2026-11-24-LLM应用-工具调用Tool-calling与Function-calling.md) · [回到索引](README.md)
+系列：上一篇 · [工具调用：让模型提议，由程序执行](FDE-22-2026-11-24-LLM应用-工具调用Tool-calling与Function-calling.md) · 下一篇 · [MCP 与工具生态：标准插头，不是自动放行](FDE-24-2026-11-26-LLM应用-MCP与工具生态.md) · [回到索引](README.md)
