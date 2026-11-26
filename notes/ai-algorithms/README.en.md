@@ -29,22 +29,22 @@ Lesson bodies are in Simplified Chinese. This page is the bilingual index. Examp
 | ALG-13 | Classification / regression (neural network, images) | Intermediate | Medium: basic rounds often ask about convolution, pooling and why CNNs beat fully connected nets on images; hand-deriving shapes is rare in FDE write-ups | Image inputs (parcel photos, IDs, forms) where position varies but shapes repeat. In-house bank: personal-data compliance and human review. AI product company: pretrained fine-tuning and an evaluation set | [Convolutional neural networks (CNN)](ALG-13-卷积神经网络(CNN).md) (in Chinese) |
 | ALG-14 | Neural network (sequences, foundation of LLMs) | Upper intermediate | High: FDE roles touch LLMs daily, so expect what attention does and why long text is costly; hand-deriving multi-head attention is rare | Long-document Q&A, context window and token cost. In-house bank/insurer: data stays in, cite sources, human review. AI product company: latency and cost | [Attention and Transformer](ALG-14-注意力与Transformer(Attention-and-Transformer).md) (in Chinese) |
 | ALG-15 | Representation learning / retrieval (LLM deployment) | Intermediate | High: LLM-deployment FDE interviews rarely avoid it; expect what an embedding is, how similarity is measured, why retrieval misses; hand-writing an ANN index is rare | Users and documents use different words, keyword search misses; similar cases; first step of RAG. In-house bank/insurer: data stays in, permissions, citations. AI product company: recall evaluation and latency | [Embeddings and Vector Search](ALG-15-Embedding与向量检索(Embeddings-and-Vector-Search).md) (in Chinese) |
+| ALG-16 | LLM applications / retrieval-augmented (LLM deployment) | Intermediate | High: the most-probed topic in Hong Kong LLM-deployment FDE interviews; expect the flow, whether a wrong answer is a retrieval or generation failure, how to evaluate; hand-writing a full system is rare | Answers live in the customer's own, changing documents; citations needed. In-house bank/insurer: data stays in, permissions, declining. AI product company: evaluate retrieval and generation separately | [Retrieval-Augmented Generation (RAG)](ALG-16-检索增强生成(RAG).md) (in Chinese) |
 
 <a id="order"></a>
 
 ## Study order
 
-ALG-01 linear regression, ALG-02 logistic regression, ALG-03 decision tree, ALG-04 k-nearest neighbors, ALG-05 K-Means, ALG-06 random forest, ALG-07 gradient boosting, ALG-08 naive Bayes, ALG-09 support vector machine, ALG-10 principal component analysis, ALG-11 neural networks and backpropagation, ALG-12 overfitting and regularization, ALG-13 convolutional neural networks, ALG-14 attention and Transformer, and ALG-15 embeddings and vector search are written.
+ALG-01 linear regression, ALG-02 logistic regression, ALG-03 decision tree, ALG-04 k-nearest neighbors, ALG-05 K-Means, ALG-06 random forest, ALG-07 gradient boosting, ALG-08 naive Bayes, ALG-09 support vector machine, ALG-10 principal component analysis, ALG-11 neural networks and backpropagation, ALG-12 overfitting and regularization, ALG-13 convolutional neural networks, ALG-14 attention and Transformer, ALG-15 embeddings and vector search, and ALG-16 retrieval-augmented generation are written.
 
 Second batch (confirmed 2026-11-25, LLM deployment for Hong Kong FDE), planned in order:
 
-- RAG (retrieval-augmented generation)
 - LLM evaluation
 - LoRA fine-tuning
 - Agents and tool calling
 - XGBoost
 
-Serials after ALG-15 are assigned when those notes are written, in lesson order. An assigned serial is not reused or renumbered.
+Serials after ALG-16 are assigned when those notes are written, in lesson order. An assigned serial is not reused or renumbered.
 
 <a id="conventions"></a>
 

@@ -124,4 +124,4 @@ embedding 是把文字映射成一个定长向量，意思相近的文字向量�
 1. [What is a Vector Database? Powering Semantic Search & AI Applications](https://www.youtube.com/watch?v=gl1r1XV0SLw) — IBM Technology：讲清什么是向量、embedding 怎么来、索引怎么找。
 2. [Vector Databases Explained: The Complete Guide for 2026](https://www.youtube.com/watch?v=4pUYfY-b5CQ) — Aishwarya Srinivasan：从向量库的角度讲它在 RAG 和语义搜索里的位置。
 
-上一篇：[注意力与 Transformer（ALG-14）](ALG-14-注意力与Transformer(Attention-and-Transformer).md) · 下一篇预告：RAG（检索增强生成） · [回到索引](README.md)
+上一篇：[注意力与 Transformer（ALG-14）](ALG-14-注意力与Transformer(Attention-and-Transformer).md) · 下一篇：[检索增强生成（ALG-16）](ALG-16-检索增强生成(RAG).md) · [回到索引](README.md)
