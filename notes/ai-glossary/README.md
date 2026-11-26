@@ -33,6 +33,7 @@
 | AI-19 | 查询路由 | Query Routing | 2026-11-23 | [查询路由（Query Routing）](AI-19-查询路由(Query-Routing).md) |
 | AI-20 | 引用与溯源 | Grounding / Citation | 2026-11-24 | [引用与溯源（Grounding and Citation）](AI-20-引用与溯源(Grounding-and-Citation).md) |
 | AI-21 | 查询改写 | Query Rewriting | 2026-11-25 | [查询改写（Query Rewriting）](AI-21-查询改写(Query-Rewriting).md) |
+| AI-22 | 重排序 | Reranking | 2026-11-26 | [重排序（Reranking）](AI-22-重排序(Reranking).md) |
 
 <a id="conventions"></a>
 
