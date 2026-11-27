@@ -38,6 +38,7 @@ Each lesson takes 5–8 minutes and explains one idea properly. Examples are fic
 | FDE-22 | 2026-11-24 | 22 | LLM applications | Intro to intermediate | [Tool calling: the model proposes, the program executes](FDE-22-2026-11-24-LLM应用-工具调用Tool-calling与Function-calling.md) (in Chinese) |
 | FDE-23 | 2026-11-25 | 23 | LLM applications | Intro to intermediate | [Agents: planning, loops, memory, and when not to use one](FDE-23-2026-11-25-LLM应用-Agent规划循环记忆与何时不该用.md) (in Chinese) |
 | FDE-24 | 2026-11-26 | 24 | LLM applications | Intro to intermediate | [MCP and the tool ecosystem: a standard plug, not a blanket approval](FDE-24-2026-11-26-LLM应用-MCP与工具生态.md) (in Chinese) |
+| FDE-25 | 2026-11-27 | 25 | LLM applications | Intro to intermediate | [Evals: offline test sets, LLM-as-judge, and proving it is good enough before go-live](FDE-25-2026-11-27-LLM应用-评测Evals离线集与LLM-as-judge.md) (in Chinese) |
 
 <a id="conventions"></a>
 
