@@ -129,4 +129,4 @@ RAG 让大模型基于客户自己的、会更新的资料回答，而不是靠�
 1. [What is Retrieval-Augmented Generation (RAG)?](https://www.youtube.com/watch?v=T-D1OfcDW1M) — IBM Technology：用一个简单例子讲清为什么要先检索再生成。
 2. [RAG From Scratch: Part 1 (Overview)](https://www.youtube.com/watch?v=wd7TZ4w1mSw) — LangChain：从索引、检索到生成，把整条流程过一遍。
 
-上一篇：[Embedding 与向量检索（ALG-15）](ALG-15-Embedding与向量检索(Embeddings-and-Vector-Search).md) · 下一篇预告：LLM 评估 · [回到索引](README.md)
+上一篇：[Embedding 与向量检索（ALG-15）](ALG-15-Embedding与向量检索(Embeddings-and-Vector-Search).md) · 下一篇：[LLM 评估（ALG-17）](ALG-17-LLM评估(LLM-Evaluation).md) · [回到索引](README.md)
