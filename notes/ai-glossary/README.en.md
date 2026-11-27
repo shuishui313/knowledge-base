@@ -34,6 +34,7 @@ Short notes on AI terms and techniques. Each note is written in Simplified Chine
 | AI-20 | Grounding and citation | Grounding / Citation | 2026-11-24 | [引用与溯源（Grounding and Citation）](AI-20-引用与溯源(Grounding-and-Citation).md) (in Chinese) |
 | AI-21 | Query rewriting | Query Rewriting | 2026-11-25 | [查询改写（Query Rewriting）](AI-21-查询改写(Query-Rewriting).md) (in Chinese) |
 | AI-22 | Reranking | Reranking | 2026-11-26 | [重排序（Reranking）](AI-22-重排序(Reranking).md) (in Chinese) |
+| AI-23 | Hybrid search | Hybrid Search | 2026-11-27 | [混合检索（Hybrid Search）](AI-23-混合检索(Hybrid-Search).md) (in Chinese) |
 
 <a id="conventions"></a>
 
