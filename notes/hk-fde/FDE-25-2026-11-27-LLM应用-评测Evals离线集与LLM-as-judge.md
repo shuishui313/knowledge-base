@@ -110,4 +110,4 @@ flowchart LR
 ## 延伸观看
 - [LLM Evals: Common Mistakes](https://www.youtube.com/watch?v=GL0XhAj5LPE)（Hamel Husain 与 Shreya Shankar）：讲清基础模型榜和应用评测不是一回事，以及评测里常见的错法。
 
-系列：上一篇 · [MCP 与工具生态：标准插头，不是自动放行](FDE-24-2026-11-26-LLM应用-MCP与工具生态.md) · [回到索引](README.md)
+系列：上一篇 · [MCP 与工具生态：标准插头，不是自动放行](FDE-24-2026-11-26-LLM应用-MCP与工具生态.md) · 下一篇 · [护栏与人工在环：防幻觉、防越权操作](FDE-26-2026-11-28-LLM应用-护栏与人工在环防幻觉防越权.md) · [回到索引](README.md)
