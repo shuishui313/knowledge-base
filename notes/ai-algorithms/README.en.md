@@ -31,12 +31,13 @@ Lesson bodies are in Simplified Chinese. This page is the bilingual index. Examp
 | ALG-15 | Representation learning / retrieval (LLM deployment) | Intermediate | High: LLM-deployment FDE interviews rarely avoid it; expect what an embedding is, how similarity is measured, why retrieval misses; hand-writing an ANN index is rare | Users and documents use different words, keyword search misses; similar cases; first step of RAG. In-house bank/insurer: data stays in, permissions, citations. AI product company: recall evaluation and latency | [Embeddings and Vector Search](ALG-15-Embedding与向量检索(Embeddings-and-Vector-Search).md) (in Chinese) |
 | ALG-16 | LLM applications / retrieval-augmented (LLM deployment) | Intermediate | High: the most-probed topic in Hong Kong LLM-deployment FDE interviews; expect the flow, whether a wrong answer is a retrieval or generation failure, how to evaluate; hand-writing a full system is rare | Answers live in the customer's own, changing documents; citations needed. In-house bank/insurer: data stays in, permissions, declining. AI product company: evaluate retrieval and generation separately | [Retrieval-Augmented Generation (RAG)](ALG-16-检索增强生成(RAG).md) (in Chinese) |
 | ALG-17 | LLM applications / evaluation (LLM deployment) | Intermediate | High: Hong Kong LLM-deployment FDE interviews often ask how you know it is good enough and how you accept it; hand-writing an eval framework is rare | Pre-launch acceptance; confirming a prompt or model change did not regress. In-house bank/insurer: money questions must be all correct, keep records. AI product company: regression tests and judge-model calibration | [LLM Evaluation](ALG-17-LLM评估(LLM-Evaluation).md) (in Chinese) |
+| ALG-18 | LLM applications / fine-tuning (LLM deployment) | Upper intermediate | Medium-high: Hong Kong LLM-deployment FDE interviews often ask when to fine-tune versus use RAG or prompts; hand-deriving low-rank decomposition is rare | Unstable output format or style with clean examples. In-house bank/insurer: data stays in, auditable. AI product company: small model plus adapter, regression tests | [LoRA Fine-Tuning](ALG-18-LoRA微调(LoRA-Fine-Tuning).md) (in Chinese) |
 
 <a id="order"></a>
 
 ## Study order
 
-ALG-01 linear regression, ALG-02 logistic regression, ALG-03 decision tree, ALG-04 k-nearest neighbors, ALG-05 K-Means, ALG-06 random forest, ALG-07 gradient boosting, ALG-08 naive Bayes, ALG-09 support vector machine, ALG-10 principal component analysis, ALG-11 neural networks and backpropagation, ALG-12 overfitting and regularization, ALG-13 convolutional neural networks, ALG-14 attention and Transformer, ALG-15 embeddings and vector search, ALG-16 retrieval-augmented generation, and ALG-17 LLM evaluation are written.
+ALG-01 linear regression, ALG-02 logistic regression, ALG-03 decision tree, ALG-04 k-nearest neighbors, ALG-05 K-Means, ALG-06 random forest, ALG-07 gradient boosting, ALG-08 naive Bayes, ALG-09 support vector machine, ALG-10 principal component analysis, ALG-11 neural networks and backpropagation, ALG-12 overfitting and regularization, ALG-13 convolutional neural networks, ALG-14 attention and Transformer, ALG-15 embeddings and vector search, ALG-16 retrieval-augmented generation, ALG-17 LLM evaluation, and ALG-18 LoRA fine-tuning are written.
 
 Second batch (confirmed 2026-11-25, LLM deployment for Hong Kong FDE), planned in order:
 
@@ -44,7 +45,7 @@ Second batch (confirmed 2026-11-25, LLM deployment for Hong Kong FDE), planned i
 - Agents and tool calling
 - XGBoost
 
-Serials after ALG-17 are assigned when those notes are written, in lesson order. An assigned serial is not reused or renumbered.
+Serials after ALG-18 are assigned when those notes are written, in lesson order. An assigned serial is not reused or renumbered.
 
 <a id="conventions"></a>
 

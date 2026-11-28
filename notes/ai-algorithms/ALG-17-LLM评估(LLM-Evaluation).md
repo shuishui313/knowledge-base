@@ -124,4 +124,4 @@ $$\text{准确率}=\frac{\text{判对条数}}{\text{总条数}}$$
 
 </details>
 
-上一篇：[检索增强生成（ALG-16）](ALG-16-检索增强生成(RAG).md) · 下一篇预告：LoRA 微调 · [回到索引](README.md)
+上一篇：[检索增强生成（ALG-16）](ALG-16-检索增强生成(RAG).md) · 下一篇：[LoRA 微调（ALG-18）](ALG-18-LoRA微调(LoRA-Fine-Tuning).md) · [回到索引](README.md)
