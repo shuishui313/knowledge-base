@@ -35,6 +35,7 @@
 | AI-21 | 查询改写 | Query Rewriting | 2026-11-25 | [查询改写（Query Rewriting）](AI-21-查询改写(Query-Rewriting).md) |
 | AI-22 | 重排序 | Reranking | 2026-11-26 | [重排序（Reranking）](AI-22-重排序(Reranking).md) |
 | AI-23 | 混合检索 | Hybrid Search | 2026-11-27 | [混合检索（Hybrid Search）](AI-23-混合检索(Hybrid-Search).md) |
+| AI-24 | 文档切块 | Chunking | 2026-11-28 | [文档切块（Chunking）](AI-24-文档切块(Chunking).md) |
 
 <a id="conventions"></a>
 
